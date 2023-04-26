@@ -1,0 +1,66 @@
+.sub_top{width:100%; height:0; position:relative;}
+.sub_text{font-size:25px; margin-top:5px; display:block;}
+.sub_top .top_text{width:1200px;margin:0px auto;font-size:40px;font-weight:800; color:#fff;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);}
+.sub_text strong{font-weight:700;}
+.sub_top.myclass{width:100%; height:0; background:url('../img/sub/myclass_top.jpg'); background-size:100%; padding-top:calc(208 / 2000 * 100%);}
+.sub_content{width:1200px; margin:0px auto 85px;}
+.sub_content .pr_title{height:45px;margin: 75px 0px 30px;color:#000; border-bottom:1px solid #000; font-size:1.8rem;font-weight:600;}
+
+.myclasstop{ overflow:hidden; }
+.myclasstop .myinfo p{font-size:2rem; color:#201715; font-weight: 700; margin:60px 0px}
+.myclasstop .myinfo p .userid{color:#f82c34}
+.mylecture_menu {display:flex;}
+.mylecture_menu li.lecture{width:600px; height:60px; text-align:center; font-size:1.5rem; line-height:60px; border:1px solid #ddd;}
+.mylecture_menu li.lecture.on{background:#f82c34; }
+.mylecture_menu li.lecture.on a{display:block; color:#fff;}
+
+
+.lecture_list > li{display:flex; border:1px solid #ddd; border-radius:10px; margin-bottom:3%;}
+.left_lec_info{width:70%; padding:3% 4%; border-right:1px solid #ddd;}
+.left_lec_info .lec_list{font-size:1.5rem; font-weight: 600;}
+.left_lec_info .lec_list .lec_sub_list{border:1px solid #f82c34; border-radius: 15px; padding:0px 2%; color:#f82c34;}
+.left_lec_info .lec_title{font-weight: 600; margin:1% 0; font-size:1.3rem;}
+.left_lec_info .lec_day{color:#999;}
+.left_lec_info .progress_wrap{display:flex;margin:3% 0 1%;}
+.left_lec_info .progress_wrap span{color:#f82c34}
+.left_lec_info .progress_wrap li:first-child{flex-grow: 1;}
+.left_lec_info .progress_wrap .lec_period{color:#999; justify-content: flex-end;}
+.progressbar{width:100%; background:#dfdfdf; height:30px; border-radius: 20px;}
+.progressbar .progress_percent{display:block; text-align: center; height:30px; line-height:30px; color:#fff; border-radius: 20px 0px 0px 20px; background: #f82c34;}
+.right_lec_info{width:30%;}
+.fin_lec{color: #999; text-align: center; display: block; height: 135px; line-height: 135px; font-size: 1.8rem;}
+.lecture_btn{display:block; position:relative; background:#f82c34;  color:#fff !important; height: 50px;  width: 65%; margin: 0px auto;text-align: center;line-height: 50px;margin-top: 47%; padding-left: 7%;}
+.lecture_btn::before{content:"\ea3f"; position: absolute; left: 55px; top: 0; font-family: xeicon !important; color: #fff; font-size: 29px;}
+.lecture_fin_btn{display:block; position:relative; background:#f82c34;  color:#fff !important; height: 50px;  width: 65%; margin: 0px auto;text-align: center;line-height: 50px;margin-top:6%;}
+.progressbar .progress_percent.end{display:block; text-align: center; height:30px; line-height:30px; color:#fff; border-radius: 20px; background: #f82c34;}
+
+.myclass_table{width:100%; margin-bottom:5%}
+.myclass_table tr td{text-align:center; height:50px; line-height:50px;}
+.myclass_table tr td.lec_title{text-align:left;}
+.table_content{border-bottom: 1px solid #ddd;}
+.myclass_table .table_header{height:50px; line-height:50px; border-top:1px solid #333; border-bottom:1px solid #333;}
+.fin_check{text-align:center;}
+.fin_check input[type=checkbox] {display:none;}
+.fin_check input[type=checkbox] + label {cursor: pointer; padding-left:27px; background-repeat: no-repeat;background-image: url('/asset/pc/2.0/img/icon_checkbox.png');background-position:left -48px; font-size:15px; padding-bottom:3px;}
+.fin_check input[type=checkbox]:checked  + label {background-position:left 1px;}
+
+.file_down{position:relative;}
+.file_down::before { content: "\ea7f";position: absolute; color: #999;font-family: xeicon !important;transform: rotate( 21deg);font-size: 18px;top: 3px;left:42%;}
+
+.playbtn{cursor:pointer; position:relative; width:80px; display:block; height:30px;color:#f82c34; border:1px solid #f82c34;     padding-left: 15px;   font-size: 1.2rem; line-height: 30px;text-align: center;margin: 0px auto;}
+.playbtn::before{content:"\ea3f"; position: absolute; left:5px; top: 0; font-family: xeicon !important; color: #f82c34; font-size:20px;}
+
+
+.lecture_top > li{display:flex; border-radius:10px; margin-bottom:3%;}
+.lecture_top .left_lec_info{width:17%;background:url('../img/people.png')no-repeat center center;  height: 205px; display: block;border-radius: 50%;margin: 45px;float: left;background-size: 162%;}
+.lecture_top .right_lec_info{width:70%; padding:6% 4%; }
+.lecture_top .right_lec_info .lec_list{font-size:1.5rem; font-weight: 600;}
+.lecture_top .right_lec_info .lec_list .lec_sub_list{border:1px solid #f82c34; border-radius: 15px; padding:0px 2%; color:#f82c34;}
+.lecture_top .right_lec_info .lec_title{font-weight: 400; text-align: left; margin: 0% 0 6%;font-size: 1.4rem; color: #999;}
+.lecture_top .right_lec_info .lec_day{color:#999;}
+.lecture_top .right_lec_info .progress_wrap{display:flex;margin:0% 0 1%;}
+.lecture_top .right_lec_info .progress_wrap span{color:#f82c34}
+.lecture_top .right_lec_info .progress_wrap li:first-child{flex-grow: 1;}
+.lecture_top .right_lec_info .progress_wrap .lec_period{color:#999; justify-content: flex-end;}
+.lecture_top ul.tag_list {display: flex;}
+.lecture_top ul.tag_list li {border: 1px solid #ddd;border-radius: 20px; padding: 0 3%;margin: 0 1% 2% 0;height: 30px; line-height: 27px;}

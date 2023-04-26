@@ -1,0 +1,150 @@
+
+.service1_wrap{position:relative; width:100%; height:0; background:url("../img/fp_service1.jpg") no-repeat center; padding-top: calc(466 / 1870 * 100%);  background-size: cover}
+.service_txt_wrap{width:80%;}
+.service_txt_wrap {width: 70%;margin: 0px auto;}
+.service1_txt {position: absolute;top: calc(100% - 63%);left:19%;font-size: 4rem;font-weight: 700;width: 61%;}
+.service1_txt .subtxt {font-family: 'GothamPro';color: #efefef;font-size: 3rem;text-align: center;display: block;}
+.service1_txt .subtxt1 {font-size: 4.5rem;}
+.service1_txt li{float:left;}
+.service1_txt li:first-child{margin-right:5%;}
+.service1_txt .subtxt{font-family: 'GothamPro'; color:#efefef;}
+.service1_txt .stxt1{color: #163878;    font-size: 8rem;}
+
+.service2_wrap{position:relative; width:100%; height:0; background:url("../img/fp_service2.jpg") no-repeat; padding-top: calc(509 / 1870 * 100%);  background-size: cover}
+.service_txt_wrap2{width:30%;position: absolute;top:calc(100% - 75%);left: calc(100% - 43%); color: #fff; font-size:3rem;}
+.service_txt_wrap2 strong{display:block; margin-bottom:5%;}
+.service_txt_wrap2 p{font-size:1.7rem; margin-bottom:5%;font-weight:300;}    
+
+.service3_wrap{position:relative; width:100%; height:0; background:url("../img/fp_service3.jpg") no-repeat; padding-top: calc(533 / 1870 * 100%);    background-size: cover;}
+.service_txt_wrap3{width: 51%;position: absolute;  top: calc(100% - 75%);left: calc(100% - 75%);color: #333;font-size: 3rem; margin: 0px auto;text-align: center;}
+.fbold{font-weight: 700;}    
+
+.service4_wrap{position:relative; width:100%; height:0; background:url("../img/fp_service4.jpg") no-repeat; padding-top: calc(1043 / 1870 * 100%);    background-size: cover;}
+.service_txt_wrap4{width: 51%;position: absolute;  top: calc(100% - 92%);left: calc(100% - 75%);color: #333;font-size: 3rem; margin: 0px auto;text-align: center;}
+.service_txt_wrap4 > strong{font-size:4.5rem;}
+.service_txt_wrap4 > p{color:#061d2a; opacity:0.7;font-size: 2rem;margin-top: 3%;}
+
+
+.insurance1_wrap{position:relative; width:100%; height:0; background:url("../img/fp_service1.jpg") no-repeat; padding-top: calc(466 / 1870 * 100%);  background-size: cover}
+.insurance_txt_wrap{width:80%;}
+.insurance_txt_wrap {width: 70%;margin: 0px auto;}
+.insurance1_txt {position: absolute;top: calc(100% - 63%);left:15%;font-size: 4rem;font-weight: 700;width: 61%;}
+.insurance1_txt .subtxt {font-family: 'GothamPro';color: #efefef;font-size: 3rem;text-align: center;display: block;}
+.insurance1_txt .subtxt1 {font-size: 4rem;}
+.insurance1_txt li{float:left;}
+.insurance1_txt li:first-child{margin-right:5%;}
+.insurance1_txt .subtxt{font-family: 'GothamPro'; color:#efefef;}
+.insurance1_txt .stxt1{color: #163878;    font-size: 8rem;}
+
+.insurance2_wrap{position:relative; width:100%; height:0; background:url("../img/fp_insurance2.jpg") no-repeat center; padding-top: calc(509 / 1870 * 100%);  background-size: cover}
+.insurance_txt_wrap2{width:30%;position: absolute;  top: calc(100% - 80%); left: calc(100% - 83%); color: #fff; font-size:3rem;}
+.insurance_txt_wrap2 strong{display:block; margin-bottom:5%;}
+.insurance_txt_wrap2 p{font-size:1.7rem; margin-bottom:5%;font-weight:300;}    
+
+.insurance3_wrap{position:relative; width:100%; height:0; background:url("../img/fp_insurance3.jpg") no-repeat; padding-top: calc(1340 / 1870 * 100%);    background-size: cover;}
+.insurance_txt_wrap3{position: absolute;  width: 53%;top: calc(100% - 87%);left: calc(100% - 75%);color: #333;font-size: 3rem; margin: 0px auto;text-align: center;}
+.fbold{font-weight: 700;}    
+
+
+.invest1_wrap{position:relative; width:100%; height:0; background:url("../img/fp_service1.jpg") no-repeat center; padding-top: calc(466 / 1870 * 100%);  background-size: cover}
+.invest_txt_wrap{width:80%;}
+.invest_txt_wrap {width: 70%;margin: 0px auto;}
+.invest1_txt {position: absolute;top: calc(100% - 62%); left: 22%;font-size: 4rem;font-weight: 700;width: 61%;}
+.invest1_txt .subtxt {font-family: 'GothamPro';color: #efefef;font-size: 3rem;text-align: center;display: block;}
+.invest1_txt .subtxt1 {font-size: 4.5rem;}
+.invest1_txt li{float:left;}
+.invest1_txt li:first-child{margin-right:5%;}
+.invest1_txt .subtxt{font-family: 'GothamPro'; color:#efefef;}
+.invest1_txt .stxt1{color: #163878; font-size:8rem;}
+
+.invest2_wrap{position:relative; width:100%; height:0; background:url("../img/fp_investment1.jpg") no-repeat;    margin-bottom: 5%; padding-top: calc(458 / 1870 * 100%);  background-size: cover}
+.invest_txt_wrap2{width:30%;position: absolute;top:calc(100% - 75%);left: calc(100% - 49%); color: #fff; font-size:3rem;}
+.invest_txt_wrap2 strong{display:block; margin-bottom:5%;}
+.invest_txt_wrap2 p{font-size:1.7rem; margin-bottom:5%;font-weight:300;}   
+
+.invest3_wrap{position:relative; width:100%; height:0; background:url("../img/fp_investment2.jpg") no-repeat;     margin-bottom: 5%;padding-top: calc(458 / 1870 * 100%);  background-size: cover}
+.invest_txt_wrap3{width:31%; position: absolute;top: calc(100% - 68%);left: calc(100% - 80%); color: #fff; font-size:3rem;}
+.invest_txt_wrap3 strong{display:block; margin-bottom:5%;}
+.invest_txt_wrap3 p{font-size:1.7rem; margin-bottom:5%;font-weight:300;}   
+
+.invest4_wrap{position:relative; width:100%; height:0; background:url("../img/fp_investment3.jpg") no-repeat;    margin-bottom: 5%; padding-top: calc(458 / 1870 * 100%);  background-size: cover}
+.invest_txt_wrap4{width:30%;position: absolute;top:calc(100% - 78%);left: calc(100% - 47%); color: #fff; font-size:3rem;}
+.invest_txt_wrap4 strong{display:block; margin-bottom:5%;}
+.invest_txt_wrap4 p{font-size:1.7rem; margin-bottom:5%;font-weight:300;}   
+
+/* tablet */
+@media (min-width:768px) and (max-width:1024px) {
+   .invest1_txt .subtxt{font-size:2rem;}
+   .invest1_txt .subtxt1 { font-size: 2.5rem;}
+   .invest1_txt{left:17%;}
+   .invest1_txt .stxt1{font-size:3rem;}
+   .invest_txt_wrap2{top: calc(100% - 85%);left: calc(100% - 52%); font-size:2rem;}
+   .invest_txt_wrap2 p{font-size:1.3rem;}
+   .invest_txt_wrap3{width:40%; top: calc(100% - 83%);left: calc(100% - 90%); font-size:2rem;}
+   .invest_txt_wrap3 p{font-size:1.3rem;}
+   .invest_txt_wrap4{width:40%; top: calc(100% - 91%);left: calc(100% - 52%); font-size:2rem;}
+   .invest_txt_wrap4 p{font-size:1.3rem;margin-bottom:2%;}
+}
+
+
+
+/* MOBILE */
+ @media (min-width:300px) and (max-width:767px) {
+    .service1_wrap{background:url("../img/m_fp_service1.jpg") no-repeat; padding-top: calc(378 / 720 * 100%);  background-size: cover}
+    .service1_txt{top: calc(100% - 68%); left:0; font-size:1.5rem; font-weight: 700;width: 100%;}
+    .service1_txt li{float:none;}
+    .service1_txt .subtxt{font-size:2rem; text-align:center;}
+    .service1_txt .subtxt1 {font-size: 1.8rem;text-align: center;}
+    .service1_txt .stxt1{text-align:center; font-size:3rem;}
+
+    .service2_wrap{background:url("../img/m_fp_service2.jpg") no-repeat; padding-top: calc(880 / 720 * 100%);  background-size: cover}
+    .service_txt_wrap2{width:75%;   top:calc(100% - 91%);left: calc(100% - 82%); font-size:2rem;}
+    .service_txt_wrap2 p{font-size:1.5rem;}
+
+    .service3_wrap{background:url("../img/m_fp_service3.jpg") no-repeat; padding-top: calc(462 / 720 * 100%);    background-size: cover;}
+    .service_txt_wrap3{width:85%;top: calc(100% - 75%); left: calc(100% - 92%);     font-size: 1.6rem;}
+    
+    .service4_wrap{background:url("../img/m_fp_service4.jpg") no-repeat; padding-top: calc(1067 / 720 * 100%);    background-size: cover;}
+    .service_txt_wrap4{width:85%; top: calc(100% - 95%); left: calc(100% - 93%);font-size: 2rem;}
+    .service_txt_wrap4 > strong {font-size: 3rem;}
+    .service_txt_wrap4 > p {font-size: 1.4rem; margin-top: 3%;}
+
+    .insurance1_wrap{background:url("../img/m_fp_service1.jpg") no-repeat; padding-top: calc(378 / 720 * 100%);  background-size: cover}
+    .insurance1_txt{top: calc(100% - 68%); left:0; font-size:1.5rem; font-weight: 700;width: 100%;}
+    .insurance1_txt li{float:none;}
+    .insurance1_txt .subtxt{font-size:2rem; text-align:center;}
+    .insurance1_txt .subtxt1 {font-size: 1.8rem;text-align: center;}
+    .insurance1_txt .stxt1{text-align:center; font-size:3rem;}
+
+    .insurance2_wrap{background:url("../img/m_fp_insurance2.jpg") no-repeat; padding-top: calc(879 / 720 * 100%);  background-size: cover}
+    .insurance_txt_wrap2{width:76%; top: calc(100% - 91%); left: calc(100% - 92%); font-size:2rem;}
+    .insurance_txt_wrap2 p{font-size:1.5rem;}
+
+    .insurance3_wrap{position:relative; width:100%; height:0; background:url("../img/m_fp_insurance3.jpg") no-repeat; padding-top: calc(1217 / 720 * 100%);    background-size: cover;}
+    .insurance_txt_wrap3{width: 90%; top: calc(100% - 95%); left: calc(100% - 96%);color: #333;font-size:1.7rem; margin: 0px auto;text-align: center;}
+    .fbold{font-weight: 700;}    
+
+    .invest1_wrap{background:url("../img/m_fp_service1.jpg") no-repeat; padding-top: calc(378 / 720 * 100%);  background-size: cover}
+    .invest1_txt{top: calc(100% - 68%); left:0; font-size:1.5rem; font-weight: 700;width: 100%;}
+    .invest1_txt li{float:none;}
+    .invest1_txt .subtxt{font-size:2rem; text-align:center;}
+    .invest1_txt .subtxt1 {font-size: 1.8rem;text-align: center;}
+    .invest1_txt .stxt1{text-align:center; font-size:3rem;}
+
+    .invest2_wrap{position:relative; width:100%; height:0; background:url("../img/m_fp_investment1.jpg") no-repeat;    margin-bottom: 5%; padding-top: calc(679 / 720* 100%);  background-size: cover}
+    .invest_txt_wrap2{width:78%; position: absolute; top: calc(100% - 89%); left: calc(100% - 84%);color: #fff; font-size:1.8rem;}
+    .invest_txt_wrap2 strong{display:block; margin-bottom:5%;}
+    .invest_txt_wrap2 p{font-size:1.4rem; margin-bottom:5%;font-weight:300;}   
+    
+    .invest3_wrap{position:relative; width:100%; height:0; background:url("../img/m_fp_investment2.jpg") no-repeat;     margin-bottom: 5%;padding-top: calc(679 / 720 * 100%);  background-size: cover}
+    .invest_txt_wrap3{width:78%; position: absolute; top: calc(100% - 89%); left: calc(100% - 94%);color: #fff; font-size:1.8rem;}
+    .invest_txt_wrap3 strong{display:block; margin-bottom:5%;}
+    .invest_txt_wrap3 p{font-size:1.4rem; margin-bottom:5%;font-weight:300;}   
+    
+    .invest4_wrap{position:relative; width:100%; height:0; background:url("../img/m_fp_investment3.jpg") no-repeat;    margin-bottom: 5%; padding-top: calc(679 / 720 * 100%);  background-size: cover}
+    .invest_txt_wrap4{width:78%; position: absolute;top: calc(100% - 93%);left: calc(100% - 85%); color: #fff; font-size:1.8rem;}
+    .invest_txt_wrap4 strong{display:block; margin-bottom:5%;}
+    .invest_txt_wrap4 p{font-size:1.4rem; margin-bottom:5%;font-weight:300;}   
+    
+
+ }

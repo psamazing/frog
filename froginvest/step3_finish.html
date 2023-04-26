@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/common.css">
+	<title>step3_1.일반투자자 투자정보 확인</title>
+</head>
+<body>
+	<section class="write_step">
+		<h1>
+			<div class="inner_top">
+				<strong class="step">STEP 03</strong>
+				<span class="steptitle">일반투자자 투자정보 확인</span>
+			</div>
+		</h1>
+		<div class="step3_content">
+			<div class="step3_info fin">
+				<h1>
+					고객님께서 작성해주신 고객 투자성향<br/>
+					분석 설문에 대한 결과 내용입니다.
+				</h1>
+				<span class="subtxtfin">아래 결과 내용을 토대로 고객님께 적합한 상품의 투자 권유가 이행되므로 분석결과를 확인하시기 바랍니다.</span>
+			</div>	
+
+			<div class="testfin">
+				<!--안정형
+				<div class="imgwrap">
+					<img src="img/step3_fin_01.png" alt="안정형"/>
+				</div>
+				<div class="testfinwrap">
+					<p>
+						본인의 투자자 성향보다 위험도가 높은 금융투자상품임에도
+						불구하고, 본인의 판단에 따라 투자를 하고자 하며,
+						귀사로부터 해당 금융투자상품에 대한 투자의 위험성을
+						고지 받았음을 확인합니다.
+					</p>
+					<button class="agreeBtn">동의하기</button>
+					<button class="agreeBtn complete">동의완료</button>
+				</div>
+				<!--안정추구형
+				<div class="imgwrap">
+					<img src="img/step3_fin_02.png" alt="안정추구형"/>
+				</div>
+				<div class="testfinwrap">
+					<p>
+						본인의 투자자 성향보다 위험도가 높은 금융투자상품임에도
+						불구하고, 본인의 판단에 따라 투자를 하고자 하며,
+						귀사로부터 해당 금융투자상품에 대한 투자의 위험성을
+						고지 받았음을 확인합니다.
+					</p>
+					<button class="agreeBtn">동의하기</button>
+					<button class="agreeBtn complete">동의완료</button>
+				</div>-->
+				
+				<!--위험중립형
+				<div class="imgwrap">
+					<img src="img/step3_fin_03.png" alt="위험중립형"/>
+				</div>
+				<div class="testfinwrap">
+					<p>
+						본인의 투자자 성향보다 위험도가 높은 금융투자상품임에도
+						불구하고, 본인의 판단에 따라 투자를 하고자 하며,
+						귀사로부터 해당 금융투자상품에 대한 투자의 위험성을
+						고지 받았음을 확인합니다.
+					</p>
+					<button class="agreeBtn">동의하기</button>
+					<button class="agreeBtn complete">동의완료</button>
+				</div>-->
+				<!--적극투자형-->
+				<div class="imgwrap">
+					<img src="img/step3_fin_04.png" alt="적극투자형"/>
+				</div>
+				<div class="testfinwrap">
+					<p>
+						본인의 투자자 성향보다 위험도가 높은 금융투자상품임에도
+						불구하고, 본인의 판단에 따라 투자를 하고자 하며,
+						귀사로부터 해당 금융투자상품에 대한 투자의 위험성을
+						고지 받았음을 확인합니다.
+					</p>
+					<input type="checkbox" name="agreeCheck" id="agreeCheck">
+					<label for="agreeCheck" class="checkbox agreeCheck"></label>
+				</div>
+				<!--공격투자형
+				<div class="imgwrap">
+					<img src="img/step3_fin_05.png" alt="공격투자형"/>
+				</div>
+				-->
+				<button class="confirmBtn">완료</button>
+		</div>	
+	</section>
+
+	<!--동의함 체크시-->
+	<div class="layer_agree_wrap">
+		<div class="layer_agree_contain">
+			<div class="content">
+				부적합 금융투자 상품<br>
+				거래 확인에 동의합니다.	
+			</div>
+			<button class="alert_no_layer">아니오</button>
+			<button class="alert_yes_layer">네</button>
+		</div>
+	</div>
+	<!--체크완료 확인 팝업-->
+	<div class="layer_alert_wrap">
+		<div class="layer_alert_contain">
+			<div class="content">
+				부적합 금융투자 상품 거래에<br/>
+				동의하여야 진행이 가능합니다.
+			</div>
+			<button class="alert_close_layer">확인</button>
+		</div>
+	</div>
+	<footer>
+		<h4>1899-2816</h4>
+		<p>서울특별시 서초구 강남대로 275, 8층 802호 </p> 
+		<p>(서초동, 강남 Main Tower)</p>
+		<p>대표 : 김기성&nbsp;&nbsp;&#x0002F;&nbsp;&nbsp;사업자등록번호: 666-81-00304</p>
+		<p>FAX : 02-521-7526&nbsp;&nbsp;&#x0002F;&nbsp;&nbsp;Email : froginvest@froginvestment.co.kr</p>
+		<p class="footer_etc">Copyrightⓒ Frog Investment consultation Inc. All right reserved.</p>
+	</footer>	
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$(function(){
+
+	$(".confirmBtn").on("click", function(){
+		//동의하기
+		if(!($("#agreeCheck").is(":checked"))) {
+			$(".layer_alert_wrap").show();
+			$(".alert_close_layer").on("click", function(){
+				$(".layer_alert_wrap").hide();
+			});
+		}
+	});
+
+	$(".alert_close_layer").on("click", function(){
+		$(".layer_alert_wrap").hide();
+	});
+
+	$(".agreeCheck").on("click", function(){
+		$(".layer_agree_wrap").show();
+	});
+	
+});
+
+</script>	
+</html>

@@ -1,0 +1,203 @@
+#wrap{width:100%; margin:0px auto;}
+
+/* 메인배너 */
+.banner_wrap{position:relative; }
+.main_banner li{width: 100%; position:relative;}
+.main_banner li a{display:block;}
+.main_banner_text{position:absolute;font-size:3rem;top:42%; width:1200px; left: calc(100% - 80%);transform:translateY(-50%);margin:0px auto;height:226px;border-radius:30px 30px 0 30px;color:#fff;transition:opacity .5s}
+
+.main_banner .img{transform:translateX(-80px);transition:all .8s;position:relative;}
+.main_banner .slick-slide img{width:100%;}
+.main_banner .slick-active .img{transform:translateX(0);opacity:1}
+.main_banner .slick-current.slick-active u{transform:translateX(0);opacity:1}
+.main_banner u{text-decoration:none; transform: translateX(50px);opacity: 0;transition: all .5s;}
+.main_banner strong{position:relative; font-size:7rem; font-weight:800;}
+.main_banner strong:after{content:""; position:absolute; width:230px; height:2px; background:#fff; bottom:-23px; left: 0;}
+.main_banner strong span{color:#f82c34;font-weight:800;}
+.main_banner .tit{display:block;}
+
+.banner_wrap .slick-arrow{display:none !important;}
+.banner_wrap  .slick-dots {width:100px;clear: both; list-style-type: none;overflow: hidden;margin: 0px 0 16px; padding: 0;position: absolute;bottom:22%; left:calc(100% - 80%);}
+.banner_wrap .slick-dots li {width:20px; text-align: center; float:left; }
+.banner_wrap .slick-dots li button{width:12px; height:12px; outline:none; margin:5px;display:inline-block; border-radius:22px;text-indent:-99999999999999px;background-color:none; border:2px solid #fff;}
+.banner_wrap .slick-dots li.slick-active button{width:12px; height:12px; background-color:#fff;color:#fff;}
+.btnPlay {position:absolute; bottom:calc(100% - 75.4%); left:26%;} 
+
+/* 수강후기 */
+.review_wrap{width:1200px; margin:100px auto;}
+.best_review_wrap p.txttop{color:#000;font-size:4rem; font-weight: 700;}
+.best_review_wrap p.txttop strong{font-weight: 700;}
+.best_review .slick-list{height:500px;} 
+.fontred{font-weight:700; color:#f82c34;}
+
+.profile_info {overflow:hidden;padding:15px 35px;    box-sizing: border-box;}
+.profile_info li{float:left;}
+.profile_info > li.write_user_name{height:52px; width: 148px !important; line-height:52px;color: #333;font-weight: 700;margin-left: 10px;}
+.profile_info > li.rating{ color:#f92f37; margin-top: 10px; font-size:16px;}
+
+.review_wrap .rolling_top{width:100%; margin:0px auto; display:flex;}
+.review_wrap .rolling_top li{width:100%; height:45px; line-height:45px; font-size:1.3rem; text-align:center; color:#fff; background:#222;}
+.review_wrap .rolling_top li span.user_th{width:20%; float:left;}
+.review_wrap .rolling_top li span.title_th{width:80%; float:left;}
+.review_wrap .rolling_wrap{width:100%; margin:0px auto; overflow:hidden; }
+.review_wrap .rollinglist{width:100%; height:304px; overflow:hidden;border-bottom:2px solid #222;}
+.review_wrap .rollinglist li{display:block;width:100% !important; margin:0px auto !important; text-align:center; height:60px !important; line-height:60px !important;border-bottom:1px solid #ddd !important;}
+.review_wrap .rollinglist li span.writeuser{width:20%; color:#000; float:left;}
+.review_wrap .rollinglist li span.writetitle{width:80%; color:#000; float:left; font-weight:400; text-align: left; text-overflow: ellipsis; overflow:hidden; white-space: nowrap; box-sizing: border-box; padding:0px 5px;}
+.review_wrap .rollinglist li span.writeday{width:25%; float:left}
+.review_wrap .rollinglist .slick-arrow{display:none !important;}
+.rolling_review_wrap > .more_btn{position:relative; float:right; width:145px; height:35px; line-height:35px; border: 1px solid #000;text-align: center; display: block; margin-top:10px; cursor:pointer;}
+.rolling_review_wrap > .more_btn:after{content:">";position:absolute; right:0;font-size: 14px; right: 30px;font-weight: 600;top: 1px;}
+.best_review{width:1200px;margin:30px 0px; height:500px;}
+.best_review li.br_li{width:360px !important; float:left; overflow:hidden; background:#fff; border-radius:30px; box-shadow:5px 11px 14px 6px rgb(0 0 0 / 10%);}
+.best_review li.br_li:last-child{margin-right:0;}
+.best_review li.br_li strong{font-size:1.5rem;font-weight:500;color:#000;padding:0px 35px 0px; width:80%; display: block; overflow:hidden; text-overflow: ellipsis; white-space: nowrap;}
+.best_review li.br_li .more_btn{float:right; width:110px;text-align: center; margin:5px 0px 18px;; color:#f82c34; display: block; text-decoration: underline;}
+.best_review li .reviewimg{height:150px; display:block; overflow:hidden;}
+.best_review li .reviewimg img{width:100%;}
+.best_review .slick-slide{width:403px !important;}
+.best_review .slick-list{padding:9px 0px 23px -5px;}
+.best_review .slick-arrow{position:absolute; color:#fff;z-index:9; top:40%; text-indent:-999999px;}
+.best_review .slick-arrow.slick-prev{border-radius: 50px;left:-10%;  width:98px; height:98px; overflow:hidden; background:#f3f3f3 url("../img/review_arrow.png")no-repeat 24px -57px; }
+.best_review .slick-arrow.slick-prev:hover{background:#f3f3f3 url("../img/review_arrow.png")no-repeat 24px 21px; }
+.best_review .slick-arrow.slick-next{border-radius: 50px;right:-11%;width:98px; height:98px; overflow:hidden; background:#f3f3f3 url("../img/review_arrow.png")no-repeat  138% 157%}
+.best_review .slick-arrow.slick-next:hover{background:#f3f3f3 url("../img/review_arrow.png")no-repeat 138% -57%;}
+.review_con{padding:0px 35px;line-height:1.6; height:7.4em; margin-bottom:10px;overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp:5; -webkit-box-orient: vertical;}
+
+/*수강인증*/
+.photoreview{width:100%; height:565px; background:#1c1d21;overflow:hidden;}
+.phototext {padding-top:47px;}
+.phototext p{width:1200px; color:#fff; text-align: center; margin:0px auto;font-size:2.3rem;font-weight:700;}
+.phototext p.hashtag{opacity: 0.7;font-size: 1.5rem; font-weight: 300;}
+.photo_review_list{position:relative; width:1200px; height:360px; margin:0px auto;}
+.photoreview_wrap{position:relative;margin:43px 0px;}
+.photo_review_list li{position:relative; width:360px; height:360px; float:left; opacity: .4; transition:all ease-in-out .5s;}
+.photoreview_wrap .photo_review_list .slick-active li{opacity: 1;}
+.photo_review_list .slick-list{overflow: initial !important; content:""; position:absolute; top:0px;width:100%; height:500px; }
+.photo_review_list .slick-arrow{position:absolute; color:#fff;z-index:9; top:40%; text-indent:-999999px;}
+.photo_review_list .slick-arrow.slick-prev{ left:-8%;  width:55px; height:66px; overflow:hidden; background:url("../img/ph_review_arrow.png")no-repeat; }
+.photo_review_list .slick-arrow.slick-prev:hover{background:url("../img/ph_review_arrow.png")no-repeat 0% 97%; }
+.photo_review_list .slick-arrow.slick-next{right:-47px;width:55px; height:66px; overflow:hidden; background:url("../img/ph_review_arrow.png")no-repeat 98% -1%;}
+.photo_review_list .slick-arrow.slick-next:hover{background:url("../img/ph_review_arrow.png")no-repeat 98% 97%;}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+/*수익인증*/
+.benefitwrap{position:relative; width:100%; height:1240px; background:#f6f6f6; overflow:hidden; text-align: center; margin:0px auto; font-size:3rem;}
+.benefitwrap p.top{color:#757373; font-size:1.5rem;}
+.benefitwrap p.bottom{color:#201715;  font-weight:700;}
+.benetext{ padding:140px 0px 30px;}
+.benelistwrap{position:relative; width:1200px; height:913px;margin:0px auto; background:url("../img/kakaolistback.png")no-repeat top center; background-size:100%;}
+.benelist{overflow: hidden; position:absolute;top:29px;left:48px;width:1154px;}
+.benelist li{float: left; width: 248px;height: 176px;margin-right: 37px;margin-bottom: 44px;overflow: hidden;}
+.bene_more_btn{bottom: 90px; display: block;position: absolute;left: 400px;}
+.benefitwrap::before{ content: "";position: absolute; background: url("../img/bene_back.png")no-repeat; width: 494px; height: 397px; left: 0; top: -86px;}
+.benelistwrap::before{content:"";position:absolute; left: -157px;background: url("../img/human1.png")no-repeat;width: 363px; height: 397px; bottom: -60px; z-index:9;}
+.benelistwrap::after{content:"";position: absolute; right: -237px; background: url("../img/human2.png")no-repeat; width: 413px; height: 323px; bottom: -44px; z-index:9; background-size: 100%;}
+
+/*영상후기*/
+.video_review_back{position:relative; width:100%; height:0;background:url('../img/video_review_back.jpg')no-repeat  center center / cover; padding-top: calc(1085 / 2000 * 100%);}
+.video_review_back:before{content:""; position:absolute; background:url('../img/vi_review_back2.png')no-repeat; width: 20%;height: 519px;top: 56px;left: 11%; z-index:9;background-size: 100%;}
+.video_review_back:after{content:""; position:absolute;  background:url('../img/vi_review_back1.png')no-repeat; width: 27%; height:236px;bottom:9%; right:9%; background-size: 100%;}
+.video_review{width:40%; margin:0px auto; position:absolute; top: 18%; left: 29%;}
+.video_review a{display:block; margin-bottom:40px;}
+.video_review a img{width:100%;}
+
+/*강사스토리*/
+.teach_wrap{position:relative; width:100%; height:0;background:url('../img/teach_back.png')no-repeat  center center / cover; padding-top: calc(1544 / 2000 * 100%);}
+
+/*수익률인증*/
+.auth_bene_wrap{width:100%; height:550px;}
+.auth_bene_txt{width:1200px; margin:60px auto 0;}
+.auth_bene_txt p{text-align:center; font-size:2.0rem; }
+.auth_bene_txt p.txttop{position: relative;text-align: center;margin: 0px auto;color: #333; margin: 0px auto;font-size: 3rem;font-weight: 700;}
+.beneauthlistwrap{background:url('../img/phone.jpg')no-repeat center center / cover; width:100%;height:0; padding-top: calc(591 / 2000 * 101%); background-size:95%; overflow: hidden}
+.beneauthlist{position:relative; width:1200px; margin:0px auto 0px; margin-top: calc(100% - 123%);}
+.beneauthlist li{position:relative; opacity:.4; transition: all ease-in-out .5s;}
+.beneauthlist li .bene_percent{display:none;}
+.beneauthlist .slick-center li {opacity:1;}
+.beneauthlist .slick-center li:after{content:""; background:url("../img/bene_percent.png")no-repeat; width:120px; height:120px; position:absolute; z-index:9; top:0; right:-63px; background-size:100%;}
+.beneauthlist .slick-center li .bene_percent{display: block;top: 32px; right: -36px; z-index: 99;position: absolute;color: #fff;font-size: 2.3rem;font-weight: 700;}
+.beneauthlist .slick-slide img{width:77%; text-align:center; margin:0px auto;}
+.beneauthlist .slick-arrow{position:absolute; top:33%;z-index:9; overflow:hidden; text-indent:-9999px; width:70px; height:70px; border-radius: 50px;}
+.beneauthlist .slick-arrow.slick-prev{left:28%;background: #f3f3f3 url(../img/review_arrow.png)no-repeat 9px -70px;}
+.beneauthlist .slick-arrow.slick-next{right:27.5%;background: #f3f3f3 url(../img/review_arrow.png)no-repeat -85px -69px; }
+.beneauthlist .slick-slide.slick-current.slick-active.slick-center img{width:100%;}
+/*강의소개*/
+.lec_intro_wrap1{position:relative; width:100%; height:0;background:url('../img/lecture_intro_back.jpg')no-repeat  center center / cover; padding-top: calc(1230 / 2000 * 100%);}
+
+/*투자전략*/
+.invest_wrap{position:relative; width:100%; height:0;background:url('../img/invest_back.jpg')no-repeat  center center / cover; padding-top: calc(2277 / 2000 * 100%);}
+
+/*강의소개2*/
+.lec_txt{width:1200px; text-align: center; margin:120px auto 0;}
+.lec_txt .top{font-size:2.0rem;}
+.lec_txt .txttop{font-size:3rem; font-weight: 700; color:#333;}
+
+/*강의이력*/
+.lect_history_wrap{position:relative; width:100%; height:0;background:url('../img/lect_history_back.jpg')no-repeat  center center / cover; padding-top: calc(1109/ 2000 * 100%);}
+
+/*커리큘럼*/
+.curriculum_wrap{position:relative; width:100%; height:0;background:url('../img/curriculum.jpg')no-repeat  center center / cover; padding-top: calc(1076 / 2000 * 100%);}
+
+/*레벨테스트*/
+.level_test_wrap{position:relative; width:100%; height:0;background:url('../img/level_test_back.jpg')no-repeat  center center / cover; padding-top: calc(909 / 2000 * 100%);}
+.level_btn{width: 100%; margin: 0px auto; text-align: center; position: absolute; bottom: 6%;}
+.level_btn a{display:block;}
+.leclistwrap{width:1200px;overflow: hidden; margin:80px auto 80px;}
+.leclistwrap .leclist li{float:left; width:31%; margin-right:3%;}
+.leclistwrap .leclist li:last-child{margin-right:0%;}
+.leclistwrap .leclist li .lect_ot{position:relative; width:100%;}
+.img_wrap{position:relative; border-radius: 10px; height:250px; overflow:hidden;}
+.img_wrap .otbtn{position: absolute; bottom: 8%;color: #fff;width: 90%;  left: 5%; text-align: center; border: 1px solid #fff;height: 34px;line-height: 34px;}
+.img_wrap .otbtn:hover{color:#f82c34; border:1px solid #f82c34}
+.lect_info{margin-top:30px; }
+.lect_info .info_tit{display:block; color:#333; font-weight:700; font-size:1.5rem;}
+.lect_info .info_sub_tit{font-weight:500; font-size:1.2rem;}
+
+/*페이지이동*/
+.page_go_wrap{height:740px;}
+.page_go_txt{text-align: center; margin:130px auto 60px; font-size:3.5rem;color: #333;}
+.page_go_txt p{font-weight:700;}
+.page_ul_wrap{width:1000px; margin:90px auto 60px;}
+.page_ul_wrap li {width:28%; margin-right:7%; float:left; height:365px; border-radius: 20px;overflow: hidden; box-shadow: 10px 6px 15px rgb(0 0 0 / 30%);}
+.page_ul_wrap li:last-child{margin-right:0;}
+.page_ul_wrap li a{display:block;}
+.page_ul_wrap .iconwrap{position:relative; display:block; height: 185px;background:#e3e3e3;}
+.page_ul_wrap strong{display:block; text-align: center; margin:20px auto 30px; font-size:2rem; font-weight: 700;}
+.page_ul_wrap span.go{position:relative; display:block; text-align: center; font-weight:700; font-size:1.5rem;}
+.page_ul_wrap span.go:after{ content: "";position: absolute; width:90px; height:2px; background: #333;display: block;bottom:-7px;left:97px; z-index: 99;}
+.page_ul_wrap span.go.leveltestspan:after{width:148px; left:67px;}
+.page_ul_wrap span.go.freespan:after{width:90px;}
+.page_ul_wrap .goicon{vertical-align: middle;width: 19px;margin-top: -4px;margin-left: 5px;}
+.page_ul_wrap span.lecture:after{content:""; position:absolute; top:7px; left:54px; background: url('../img/pagego_icon.png')no-repeat 4% 86%; width:166px; height:141px;}
+.page_ul_wrap span.leveltest:after{content:""; position:absolute; top:13px; left:54px; background: url('../img/pagego_icon.png')no-repeat 56% 84%; width:166px; height:141px;}
+.page_ul_wrap span.freelecture:after{content:""; position:absolute; top:7px; left:54px; background: url('../img/pagego_icon.png')no-repeat 99% 84%; width:166px; height:141px;}
+.page_ul_wrap li a:hover .iconwrap{background:url("../img/page_back.jpg") no-repeat;    background-size: 100%;}
+.page_ul_wrap li a:hover span.lecture:after{content:""; position:absolute; top:7px; left:54px; background: url('../img/pagego_icon.png')no-repeat 4% 0%; width:166px; height:141px;}
+.page_ul_wrap li a:hover span.leveltest:after{content:""; position:absolute; top:7px; left:54px; background: url('../img/pagego_icon.png')no-repeat 56% 1%; width:166px; height:141px;}
+.page_ul_wrap li a:hover span.freelecture:after{content:""; position:absolute; top:7px; left:54px; background: url('../img/pagego_icon.png')no-repeat 99% -5%; width:166px; height:141px;}
+
+@media (min-width:2000px) {
+    .viedo_review_back:after{height: calc(100% - 73%);}
+}
+
+@media (min-width:2500px) {
+    .main_banner_text{left:calc(100% - 71%);}
+    .banner_wrap .slick-dots{bottom:28%; left:calc(100% - 71%);}
+    .btnPlay {position: absolute;bottom: calc(100% - 70.4%);left: 33%;}
+    .beneauthlistwrap { padding-top: calc(591 / 2000 * 68%); background-size: 74%; }
+    .beneauthlist .slick-slide.slick-current.slick-active.slick-center img {  width: 100%;}
+    .beneauthlist{margin-top: calc(100% - 117%);}
+    .lec_txt .top {font-size: 2.5em;}
+    .lec_txt .txttop {font-size: 4em;}
+    .benefitwrap p.top {font-size: 1.8rem;}
+
+}

@@ -1,0 +1,16 @@
+footer{justify-content:flex-end; width:100%; height:220px; background:#74757b;}
+footer .innerfooter{width:1000px; margin: 10px auto; overflow:hidden; color:#fff;font-size:0.8rem; font-weight: 300;}
+footer .innerfooter .left{float:left;width:30%; margin-top:7%; margin-right:10%;}
+footer .innerfooter .left .footerlogo{margin:0px auto; text-indent: -99999px; width:198px; height:28px; background:url("../img/footerlogo.png")no-repeat; background-size:100%;}
+footer .innerfooter .left .copy{text-align:center;font-weight:300; font-size:0.8rem; margin-top:6%; font-family: 'KoPub Dotum' !important; }
+footer .innerfooter .right{float:left;width:60%; margin-top:3%;}
+footer .innerfooter .right .company_clause{overflow:hidden; margin-bottom:1%;}
+footer .innerfooter .right .company_clause > li > a{float:left; position:relative; width:120px; font-weight:300; font-size:0.9rem;  font-family: 'KoPub Dotum' !important; }
+footer .innerfooter .right .company_clause > li > a:hover{text-decoration: underline;}
+footer .innerfooter .right .company_clause > li:first-child > a:after{content:"|"; position:absolute; right:5px; }
+footer .innerfooter .right .company_info{clear: both;font-weight:300; font-size:0.8rem;  font-family: 'KoPub Dotum' !important; }
+footer .innerfooter .right .company_info span{display:block; line-height:20px; font-weight:300; font-size:0.9rem;  font-family: 'KoPub Dotum' !important;}
+footer .innerfooter .right .company_info_etc{margin-top:3%;}
+
+.floating{position:fixed; right:19%; bottom:30%; z-index:5; cursor:pointer;}
+.floating .topBtn{display:none;}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/common.css">
+	<title>투자자문</title>
+</head>
+<body>
+	<header>
+		<h1 class="logo">청개구리투자자문</h1>
+	</header>
+
+	<section class="mainwrap">
+		<div class="main">
+			<button class="passauth confirmBtn">PASS 인증 진행</button>
+		</div>	
+	</section>
+
+	<!--인증완료-->
+	<!--작성완료 확인 팝업-->
+	<div class="layer_fin_wrap">
+		<div class="layer_fin_contain">
+			<div class="content">
+				인증이 완료되었습니다. 
+				<span>확인을 선택하시면 다음 과정으로 이동합니다.</span>	
+			</div>
+			<button class="fin_close_layer"><a href="step1.html" style="color:#fff; text-decoration: none;">확인</a></button>
+		</div>
+	</div>
+	
+	<footer>
+		<h4>1899-2816</h4>
+		<p>서울특별시 서초구 강남대로 275, 8층 802호 </p> 
+		<p>(서초동, 강남 Main Tower)</p>
+		<p>대표 : 김기성&nbsp;&nbsp;&#x0002F;&nbsp;&nbsp;사업자등록번호: 666-81-00304</p>
+		<p>FAX : 02-521-7526&nbsp;&nbsp;&#x0002F;&nbsp;&nbsp;Email : froginvest@froginvestment.co.kr</p>
+		<p class="footer_etc">Copyrightⓒ Frog Investment consultation Inc. All right reserved.</p>
+	</footer>	
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$(function(){
+	$(".passauth").on("click", function(){
+		$(".layer_fin_wrap").show();
+	});
+	$(".alert_close_layer").on("click", function(){
+		$(".layer_fin_wrap").hide();
+	});
+
+});
+
+</script>	
+</html>

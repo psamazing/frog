@@ -1,0 +1,50 @@
+/*sub배너*/
+.banner {position: relative;width: 100%;position: relative;}
+.sub_banner_text {position: absolute;font-size: 52px;color: #ffffff;font-weight: bold;font-family: 'Gotham', sans-serif !important ;top: 50%;width: 1200px;left: calc((100% - 1200px)/2);transform: translateY(-50%);margin: 0px auto;}
+/*전체강의*/
+.all_class{margin-left: calc((100% - 1200px)/2);margin-right: calc((100% - 1200px)/2);position: relative;}
+.all_class_tit{font-size: 30px;line-height: 1;color: #201715;font-weight: 500;margin-top: 75px;}
+.class_tab_wrap{width: 100%;display: flex;margin-top: 60px;}
+.class_tab_wrap .class_tab{width: 400px;height: 60px;background-color: #ffffff;border: 1px solid #d9d9d9;color: #201715;font-size: 20px;line-height: 60px;text-align: center;font-weight: 500;}
+.class_tab_wrap .class_tab.active{color: #ffffff;background-color: #f82c34;}
+.class_menu{width: 100%;border-bottom: 1px solid #202229;color: #201715;font-size: 21px;line-height: 37px;font-weight: 500;margin-top: 35px;}
+.class_box_wrap{width: 100%;height: 300px;display: flex;margin-top: 22px;margin-bottom: 15px;}
+.class_box{overflow: hidden;width: 800px;border: 1px solid #d9d9d9;border-radius: 30px 0 0 30px ;}
+.class_box .class_title{color: #201715;font-weight: 500;font-size: 21px;margin-top: 52px;line-height: 1;}
+.class_box .class_intro{margin-top: 17px;color: #7e7e7e;font-weight: 300;font-size: 16px;line-height: 20px;}
+.class_box a{display: block;color: #201715;}
+.class_box button{display: block;color: #201715;font-weight: 500;font-size: 15px;width: 160px;height: 35px;border: 1px solid #201715;margin-top: 19px;}
+.class_box .detail{display: flex;margin-top: 22px;}
+.class_box .detail li{width: 100px;height: 38px;border-radius: 19px;border: 1px solid #d2d2d2;color: #201715; font-size: 15px;line-height: 38px;text-align: center;margin-right: 6px;}
+.class_apply{border: 1px solid #d9d9d9;padding:64px;border-radius: 0px 30px 30px 0px ;border-left:none;}
+.class_apply p{font-size: 16px;color: #7e7e7e;font-weight: 300;line-height: 32px;}
+.class_apply p strong{color: #201715;font-weight: 500;font-size: 26px;line-height: 26px;}
+.class_apply p strong span{color: #f82c34;}
+.class_apply a {display: block;}
+.class_apply .button0{display: block;width: 275px;text-align: center;height: 68px;line-height: 68px;color: #ffffff;background-color: #f82c34;font-weight: 500;font-size: 26px;margin-top: 50px;}
+.course .class_box_wrap{margin-bottom: 20px;}
+.course .class_apply strong{float: left}
+.course .class_apply p input[type="checkbox"] {display: none;}
+.course .class_apply p{position: relative;padding-left: 30px; }
+.course .class_apply p input[type="checkbox"] + label { display: inline-block; cursor: pointer; content: ''; position: absolute; left: 0; top: 4px; line-height: 21px; text-align: center; width: 21px;height: 21px;background-color: #ffffff;border: 1px solid #cccccc; }
+.course .class_apply pinput[type="checkbox"] + label:before {}
+.course .class_apply p img{vertical-align: middle}
+.course .class_apply .btn_wrap{display: flex;margin-top: 30px;}
+.course .class_apply.class_only .btn_wrap{display: flex;margin-top: 70px;}
+.course .class_apply .btn_wrap div{width: 70px;}
+.course .class_apply .btn_wrap div img{text-align: center;padding: 20px 0;}
+.course .class_apply .btn_wrap .button0{width: 205px;margin-top: 0;}
+.book .book_wrap{margin-top: 24px;margin-bottom: 75px;display: flex;flex-wrap: wrap;justify-content: space-between;}
+.book .book_box{width: 370px;height: 455px;border: 1px solid #d9d9d9;margin-bottom: 35px;position: relative;}
+.book .book_box .book_tit{box-sizing: border-box;padding: 24px 0 0 0px;text-align:left;width: 100%;color: #222222;font-weight: 500;font-size: 21px;line-height: 1;text-indent:31px;}
+.book .book_box .book_intro{line-height: color: #7e7e7e;font-weight: 300;font-size: 15px;line-height: 29px;border-bottom: 1px solid #d9d9d9;width:100%; text-align:left;text-indent:31px;padding-bottom:20px;}
+.book .book_img{display: block;margin: 0 auto;margin-top: 16px;margin-bottom: 15px;width: 190px;height: 200px;}
+.book .book_box a{display: block;}
+.book .book_box .btn_wrap{display: flex;padding: 0 35px;box-sizing: border-box;margin-top: 13px}
+.book .book_box .btn_wrap div{width: 70px;}
+.book .book_box .btn_wrap div img{text-align: center;padding: 18px 0;}
+.book .book_box .btn_wrap .button0{margin-top: 0; display: block;width: 230px;text-align: center;height: 60px;line-height: 60px;color: #ffffff;background-color: #f82c34;font-weight: 500;font-size: 26px;}
+.book .book_box p.price{font-size: 20px;color: #7e7e7e;font-weight: 300;line-height: 32px;margin-left: 117px;}
+.book .book_box p.price strong{margin-left: 11px;color: #201715;font-weight: 500;font-size: 26px;line-height: 26px;}
+.book .book_box p.price strong span{color: #f82c34;}
+.book .book_box span.line{color: #7e7e7e;text-decoration-line: line-through;}

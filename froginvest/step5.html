@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/common.css">
+	<title>step5.고객 보유 종목 입력</title>
+</head>
+<body>
+	<section class="write_step">
+		<h1>
+			<div class="inner_top">
+				<strong class="step">STEP 05</strong>
+				<span class="steptitle">고객 보유 종목 입력</span>
+			</div>
+		</h1>
+		<div class="step5_content">
+			<p class="step5_con">고객님께서 보유 중인 종목과 문의, 요청 사항을 입력해주세요.</p>
+			<span class="info_txt">* 는 필수 입력 사항입니다.</span>
+			<div class="writeform">
+				<p>
+					<label for="title" class="label_txt">종목명<span>*</span></label>
+					<input type="text" placeholder="종목명">
+				</p>
+				<ul class="price_ul">
+					<li>
+						<label for="price1" class="label_txt">매수단가<span>*</span></label>
+						<input type="text" placeholder="99999">
+					</li>
+					<li>
+						<label for="price2" class="label_txt">보유비중<span>*</span></label>
+						<input type="text" placeholder="99999">
+					</li>
+				</ul>
+				<ul class="check_ul">
+					<li>
+						<input type="checkbox" id="procheck1">
+						<label for="procheck1" class="label_txt procheck">손절의향</label>
+					</li>
+					<li>
+						<input type="checkbox" id="procheck2">
+						<label for="procheck2" class="label_txt procheck">대응 시나리오</label>
+					</li>
+				</ul>	
+				<p>
+					<label for="title" class="label_txt">문의 & 요청사항</label>
+					<textarea style="resize:none;" class="text_wrap"></textarea>
+				</p>
+			</div>
+			<div class="writeform">
+				<a href="javascript:void(0);" class="deletebtn"><img src="img/deletebtn.png" alt="삭제"/></a>
+				<p>
+					<label for="title" class="label_txt">종목명<span>*</span></label>
+					<input type="text" placeholder="종목명">
+				</p>
+				<ul class="price_ul">
+					<li>
+						<label for="price1" class="label_txt">매수단가<span>*</span></label>
+						<input type="text" placeholder="99999">
+					</li>
+					<li>
+						<label for="price2" class="label_txt">보유비중<span>*</span></label>
+						<input type="text" placeholder="99999">
+					</li>
+				</ul>
+				<ul class="check_ul">
+					<li>
+						<input type="checkbox" id="procheck1">
+						<label for="procheck1" class="label_txt procheck">손절의향</label>
+					</li>
+					<li>
+						<input type="checkbox" id="procheck2">
+						<label for="procheck2" class="label_txt procheck">대응 시나리오</label>
+					</li>
+				</ul>	
+				<p>
+					<label for="title" class="label_txt">문의 & 요청사항</label>
+					<textarea style="resize:none;" class="text_wrap"></textarea>
+				</p>
+			</div>
+			<div class="writeform">
+				<a href="javascript:void(0);" class="deletebtn"><img src="img/deletebtn.png" alt="삭제"/></a>
+				<p>
+					<label for="title" class="label_txt">종목명<span>*</span></label>
+					<input type="text" placeholder="종목명">
+				</p>
+				<ul class="price_ul">
+					<li>
+						<label for="price1" class="label_txt">매수단가<span>*</span></label>
+						<input type="text" placeholder="99999">
+					</li>
+					<li>
+						<label for="price2" class="label_txt">보유비중<span>*</span></label>
+						<input type="text" placeholder="99999">
+					</li>
+				</ul>
+				<ul class="check_ul">
+					<li>
+						<input type="checkbox" id="procheck1">
+						<label for="procheck1" class="label_txt procheck">손절의향</label>
+					</li>
+					<li>
+						<input type="checkbox" id="procheck2">
+						<label for="procheck2" class="label_txt procheck">대응 시나리오</label>
+					</li>
+				</ul>	
+				<p>
+					<label for="title" class="label_txt">문의 & 요청사항</label>
+					<textarea style="resize:none;" class="text_wrap"></textarea>
+				</p>
+			</div>
+			<button class="plusBtn">추가</button>
+			<button class="confirmBtn">다음</button>	
+		</div>	
+	</section>
+	<footer>
+		<h4>1899-2816</h4>
+		<p>서울특별시 서초구 강남대로 275, 8층 802호 </p> 
+		<p>(서초동, 강남 Main Tower)</p>
+		<p>대표 : 김기성&nbsp;&nbsp;&#x0002F;&nbsp;&nbsp;사업자등록번호: 666-81-00304</p>
+		<p>FAX : 02-521-7526&nbsp;&nbsp;&#x0002F;&nbsp;&nbsp;Email : froginvest@froginvestment.co.kr</p>
+		<p class="footer_etc">Copyrightⓒ Frog Investment consultation Inc. All right reserved.</p>
+	</footer>	
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$(function(){
+
+	$(".confirmBtn").on("click", function(){
+		//동의하기
+		if(!($("#agreeCheck").is(":checked"))) {
+			$(".layer_alert_wrap").show();
+			$(".alert_close_layer").on("click", function(){
+				$(".layer_alert_wrap").hide();
+			});
+		}
+	});
+
+	$(".alert_close_layer").on("click", function(){
+		$(".layer_alert_wrap").hide();
+	});
+
+	$(".agreeCheck").on("click", function(){
+		$(".layer_agree_wrap").show();
+	});
+	
+});
+
+</script>	
+</html>

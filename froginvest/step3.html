@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/common.css">
+	<title>step3.일반투자자 투자정보 확인</title>
+</head>
+<body>
+	<section class="write_step">
+		<h1>
+			<div class="inner_top">
+				<strong class="step">STEP 03</strong>
+				<span class="steptitle">일반투자자 투자정보 확인</span>
+			</div>
+		</h1>
+		<div class="step3_content">
+			<ul class="step3_info">
+				<li>
+					본 확인서는 「자본시장과 금융투자업에 관한 법률」에 따라
+					고객의 투자자정보를 파악하여, 그에 적합한 투자권유를 해드
+					리기 위한 기초 자료로 활용됩니다. 고객의 상황에 부합하거나
+					가장 가까운 항목을 정확히 선택하여 주시기 바랍니다.
+				</li>
+				<li>
+					본 확인서는 「금융투자업규정」제44-77조 및 4-93조에 따라
+					고객의 유형을 분류하고 유형에 적합한 방식으로 운용하기
+					위해서 투자자문 계약을 체결하고자 하는 경우에는 반드시
+					작성하셔야 합니다.
+				</li>
+				<li>
+					정보를 제공하지 아니하거나 일부만을 제공한 경우에는 적합한
+					투자 권유가 이루어지지 않을 수 있으며, 이로 인하여 고객의
+					투자위험도가 증가할 수 있습니다.
+				</li>
+				<li>
+					투자자정보 확인서 작성 유효기간(36개월)이 경과한 경우
+					투자자정보 확인서를 새로 작성하여 주셔야 합니다.
+				</li>
+			</ul>	
+			<div class="testdiv">
+				<h1>투자자 구분</h1>
+				<ul class="test_ul first">
+					<li>
+						<input type="radio" id="invest1" name="invest" value="1" checked=""><label for="invest1">일반 투자자</label>
+					</li>
+					<li class="radioli">
+						<input type="radio" id="invest2" name="invest" disabled value="2"><label for="invest2">전문 투자자</label>
+					</li>
+				</ul>	
+			</div>
+			<div class="testdiv">
+				<h1>정보제공에 따른 분류</h1>
+				<ul class="test_ul last">
+					<li>
+						<input type="radio" id="info1" name="info" value="1" checked=""><label for="info1">신규 등록</label>
+					</li>
+					<li class="radioli">
+						<input type="radio" id="info2" name="info" disabled value="2"><label for="info2">기존 정보와 동일</label>
+					</li>
+					<li class="radioli">
+						<input type="radio" id="info3" name="info" disabled value="3"><label for="info3">정보변경</label>
+					</li>
+				</ul>
+			</div>	
+			<button class="confirmBtn">투자 정보 확인 테스트 시작</button>
+		</div>	
+	</section>
+
+	<!--다른선택지 선택시-->
+	<div class="layer_invest_wrap">
+		<div class="layer_invest_contain">
+			<div class="content">
+				전문가와 상담 간 "전문투자자" 혹은	다른 선택지 안내를 받으셨습니까?
+				<span>맞으면 <b>"네"</b>, 아니면 <b>"아니오"</b> 를 선택해주세요. </span>		
+			</div>
+			<button class="alert_no_layer">아니오</button>
+			<button class="alert_yes_layer">네</button>
+		</div>
+	</div>
+	
+	<footer>
+		<h4>1899-2816</h4>
+		<p>서울특별시 서초구 강남대로 275, 8층 802호 </p> 
+		<p>(서초동, 강남 Main Tower)</p>
+		<p>대표 : 김기성&nbsp;&nbsp;&#x0002F;&nbsp;&nbsp;사업자등록번호: 666-81-00304</p>
+		<p>FAX : 02-521-7526&nbsp;&nbsp;&#x0002F;&nbsp;&nbsp;Email : froginvest@froginvestment.co.kr</p>
+		<p class="footer_etc">Copyrightⓒ Frog Investment consultation Inc. All right reserved.</p>
+	</footer>	
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$(function(){
+
+	// 비활성화 라디오버튼 클릭시 레이어팝업 오픈
+	$(".radioli").on("click",function(){
+		if($(".radioli").hasClass("active")){
+			$(".layer_invest_wrap").hide();
+		}else{
+			$(".layer_invest_wrap").show();
+		}
+		
+	});
+
+	//아니오 버튼 클릭시 레이어팝업 닫기 
+	$(".alert_no_layer").on("click", function(){
+		$(".layer_invest_wrap").hide();
+	});
+
+	//예 버튼 클릭시 라디오버튼 활성화 
+	$(".alert_yes_layer").on("click", function(){
+		$(".layer_invest_wrap").hide();
+		$(".radioli").addClass("active");
+		if($(".radioli").hasClass("active")){
+			$("#invest2").attr("disabled",false);
+			$("#info2").attr("disabled",false);
+			$("#info3").attr("disabled",false);
+			
+		}else{
+			$("#invest2").attr("disabled",true);
+			$("#info2").attr("disabled",true);
+			$("#info3").attr("disabled",true);
+		}
+	});
+	
+});
+
+</script>	
+</html>

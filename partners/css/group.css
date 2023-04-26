@@ -1,0 +1,61 @@
+.group.content_back{position:relative;width:100%; height:0px; padding-top: calc(378 / 1870 * 100%); background:url(../img/top_group_banner.jpg) no-repeat;}
+.group.content_back .cont_text{ position: absolute;top: 0%;color: #fff;font-size: 4rem;left: 15%; top: 37%;}
+.group.content_back .cont_text > p{font-size: 4rem; line-height: 5rem; margin-top:0; font-weight: 700;}
+
+.board_top{position:relative;width:100%; height:0px; padding-top: calc(925 / 1870 * 100%); background:url(../img/fp_group_top.jpg) no-repeat; background-size: 100%;}
+.group_list{width:70%; margin:0px auto;border-top: 2px solid #333;overflow: hidden;}
+.group_list > ul > li{cursor:default;width:100%; border-bottom:1px solid #e2e2e2; padding:2% 0;  clear:both; overflow:hidden;}
+.group_list > ul {margin-bottom:10%;}
+.group_list .logo_img{width:35%;height: 250px; float:left; background: #f6f6f6;}
+.group_list .group_info{width:56%; float:left;    margin-left:3%; margin-top: 2%;}
+.groupname{font-size: 3rem; font-weight: 700;}
+.groupsubtext1{font-size: 2rem;margin: 5% 0 4%;}
+.groupsubtext2{font-size: 1.7rem;line-height: 2rem; }
+
+.site_go{position:relative; background:none;margin-top:3%;font-size:1.8rem; color:#163878; font-weight: 700;}
+.site_go a{display:block; color:#163878;}
+.site_go:after{content:""; position:absolute; background:url("../img/arrow.png") no-repeat; width:32px; height:15px; top:3px; left:165px; background-size: 80%;}
+.site_go:before{content:""; position:absolute;content: ""; width:195px;height:2px; background:#163878; top:30px;}
+
+.group_list > ul > li.group1 .logo_img{width:466px; height:250px; background:#f6f6f6 url(../img/fp_group_logo.png) no-repeat; background-size:75%; background-position: 50% -15%;}
+.group_list > ul > li.group2 .logo_img{width:466px; height:250px; background:#f6f6f6 url(../img/fp_group_logo.png) no-repeat; background-size:75%; background-position: 50% 50%;}
+.group_list > ul > li.group3 .logo_img{width:466px; height:250px; background:#f6f6f6 url(../img/fp_group_logo.png) no-repeat; background-size:75%; background-position: 50% 112%;}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .borad_wrap{width:90%; margin: 0px auto;}
+    .con_navi_list{width:100%;}
+    .content_back{ padding-top:calc(300 / 1870 * 130%);}
+    .cont_text { left: 2%; top: 17%; font-size: 3rem;}
+    .borad_wrap {background:none; min-height:622px;padding:0;}
+	.second_depth{width:20%;}
+	.board_top{padding-top: calc(925 / 1870 * 100%);}
+	.group.content_back .cont_text > p {font-size: 3rem;line-height: 3.2rem;}
+	.group.content_back .cont_text{left:3%;top:30%;}
+	.group_list{width:90%}
+	.group_list > ul > li.group1 .logo_img{width:43%;height:170px;}
+	.group_list > ul > li.group2 .logo_img{width:43%;height:170px;}
+	.group_list > ul > li.group3 .logo_img{width:43%;height:170px; background-position:50% 119%;}
+	.group_list .group_info{width:50%;}
+	.groupname{font-size:2rem;}
+	.group_list > ul > li{padding:5% 0;}
+ }
+
+ /* MOBILE */
+@media screen and (max-width:500px) {
+	.group.content_back{padding-top: calc(300 / 720 * 100%);background: url(../img/m_top_group_banner.jpg) no-repeat;}
+	.group.content_back .cont_text > p{font-size:1.8rem; line-height:3rem;}
+	.group.content_back .cont_text{left:7%; top:25%;}
+	.board_top{ padding-top: calc(1041 / 720* 100%);background: url(../img/m_fp_group_top.jpg) no-repeat; background-size: 100%;}
+	.group_list{width:90%;}
+	.group_list > ul > li.group1 .logo_img{width:95%; height:100px; background:#f6f6f6 url(../img/fp_group_logo.png) no-repeat; background-size:75%; background-position:35px 16px; margin:5% auto;}
+	.group_list > ul > li.group2 .logo_img{width:95%; height:100px; background:#f6f6f6 url(../img/fp_group_logo.png) no-repeat; background-size:75%; background-position: 50% 49%; margin:5% auto;}
+	.group_list > ul > li.group3 .logo_img{width:95%; height:100px; background:#f6f6f6 url(../img/fp_group_logo.png) no-repeat; background-size:75%; background-position: 50% 103%; margin:5% auto;}
+
+	.group_list .group_info{width:100%; margin-left:0; float:none;}
+	.groupname{font-size:1.8rem;    clear: both;}
+	.groupsubtext1 {font-size: 1.8rem;}
+	.groupsubtext2 {font-size: 1.3rem;line-height:1.5rem;}
+	.site_go { position: relative;background: none; margin:14% 0 7%;font-size: 1.3rem;border: 1px solid #163878;font-weight: 700;width:50%;padding:4% 3%;}
+	.site_go::before{display:none;}
+	.site_go::after{content: ''; background:url(../img/right_arrow_w.png)no-repeat 147% 50%;width:20px;height:15px;position:absolute;left:114px;top:11px; background-size:125%;}
+} 

@@ -1,0 +1,9 @@
+footer{width:100%;background:#4c4d4f;margin-top: 2%;}
+footer .inner_footer{width:1200px; overflow:hidden; margin:0px auto; padding:45px 0px;}
+footer .inner_footer .address{color:#d1d1d1;float:left;}
+footer .inner_footer .address .ct_list{height:3rem; line-height:3rem;}
+footer .inner_footer .add{color:#8e8e8f; font-weight:300;}
+footer h2 {width:27%; height:63px; float:left;   margin:0px auto;}
+footer h2 a{display:block;width:280px;height:64px;text-indent: -9999px; background: url(../img/footer_logo.png) no-repeat center; margin:0px auto; text-align:center;}
+footer .inner_footer .copy{margin-top:25px;font-size:1.0rem;}
+footer .inner_footer .mg{margin: 0 7px; color:#e4e4e4;font-weight: normal; vertical-align:top; font-size:0.8rem;}

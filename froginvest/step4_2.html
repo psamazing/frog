@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/common.css">
+	<title>step4.상품소개 / 계약</title>
+</head>
+<body>
+	<section class="write_step">
+		<h1>
+			<div class="inner_top">
+				<strong class="step">STEP 04</strong>
+				<span class="steptitle">상품소개 / 계약</span>
+			</div>
+		</h1>
+		<div class="step4_content">
+			<h1>세부계약조건</h1>
+			<ul class="contract_input_form2">
+				<li>
+					<label for="contractday" class="contractday">계약기간</label>
+					<input type="text" id="conday1" class="dayinput" placeholder="9999년 99월 99일"><span class="txt">~</span><input type="text" id="conday2" class="dayinput" placeholder="9999년 99월 99일">
+				</li>
+				<li>
+					<label for="contractpay" class="contractpaylabel">투자자문 금액</label>
+					<input type="text" id="contractpay" class="contractpay" placeholder="숫자만 입력해주세요.(원 단위)">
+				</li>
+				<li>
+					<label for="concharge" class="concharge">투자자문 수수료</label>
+					<table class="conchargetable">
+						<colgroup>
+							<col width="40%"/>
+							<col width="60%"/>
+						</colgroup>	
+						<tr>
+							<td>상품</td>
+							<td>종목관리 자문형 C 상품</td>
+						</tr>
+						<tr>
+							<td>기본 수수료</td>
+							<td>없음</td>
+						</tr>
+						<tr>
+							<td>성과 수수료</td>
+							<td>해당 없음</td>
+						</tr>
+					</table>	
+				</li>
+				<li>
+					<label for="contractmaster" class="contractmasterlabel">투자자문 담당자(선택)</label>
+					<select class="contractmaster">
+						<option>이은재 대리</option>
+					</select>
+					<div class="contractmasterdiv">
+						<h1>인은재 대리</h1>
+
+						<h4>학력 및 주요 경력</h4>
+						<p>학력사항 기술</p>
+						<p>경력사항 기술</p>
+						<p>경력사항 기술</p>
+						<p>경력사항 기술</p>
+
+						<h4>주요자격</h4>
+						<p>주요자격 내용</p>
+						<p>주요자격 내용</p>
+						<p>주요자격 내용</p>
+						<p>주요자격 내용</p>
+					</div>	
+				</li>
+				<li class="conplace">
+					<label for="contractplace" class="contractplace">고객에 대한 통지 장소</label>
+					<div class="contractplace1">
+						<input type="checkbox" id="sms_check" class="sms_check" checked="" disabled><label for="sms_check" class="sms_check">SMS</label>
+					</div>
+					<div class="contractplace2">
+						<input type="checkbox" id="mail_check" class="mail_check" checked="" disabled><label for="mail_check" class="mail_check">E-Mail</label>
+					</div>
+				</li>
+			</ul>
+			<span class="info_txt">*고객님과의 연락 및 계약 체결 내용을 SMS와 이메일로 안내해드리기 때문에 선택을 해제하실 수 없습니다.</span>
+			<button class="confirmBtn">작성 완료</button>
+		</div>	
+	</section>
+	<!--계약사항 확인 팝업-->
+	<div class="layer_alert_wrap">
+		<div class="layer_alert_contain">
+			<div class="content">
+				내용을 정확히 다 기입해주세요.
+			</div>
+			<button class="alert_close_layer">확인</button>
+		</div>
+	</div>
+	<!--계약완료 확인 팝업-->
+	<div class="layer_fin_wrap">
+		<div class="layer_fin_contain">
+			<div class="content">
+				계약이 완료되었습니다.
+				<span>YYYY년 MM월 DD일</span>
+			</div>
+			<button class="fin_close_layer">확인</button>
+		</div>
+	</div>
+	<footer>
+		<h4>1899-2816</h4>
+		<p>서울특별시 서초구 강남대로 275, 8층 802호 </p> 
+		<p>(서초동, 강남 Main Tower)</p>
+		<p>대표 : 김기성&nbsp;&nbsp;&#x0002F;&nbsp;&nbsp;사업자등록번호: 666-81-00304</p>
+		<p>FAX : 02-521-7526&nbsp;&nbsp;&#x0002F;&nbsp;&nbsp;Email : froginvest@froginvestment.co.kr</p>
+		<p class="footer_etc">Copyrightⓒ Frog Investment consultation Inc. All right reserved.</p>
+	</footer>	
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$(function(){
+
+	$(".confirmBtn").on("click", function(){
+		//동의하기
+		if(!($("#agreeCheck").is(":checked"))) {
+			$(".layer_alert_wrap").show();
+			$(".alert_close_layer").on("click", function(){
+				$(".layer_alert_wrap").hide();
+			});
+		}
+	});
+	$(".alert_close_layer").on("click", function(){
+		$(".layer_alert_wrap").hide();
+	});
+
+	$(".agreeCheck").on("click", function(){
+		$(".layer_agree_wrap").show();
+	});
+	
+});
+
+</script>	
+</html>

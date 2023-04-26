@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/common.css">
+	<title>step1.개인정보이용동의</title>
+</head>
+<body>
+	<section class="write_step">
+		<h1>
+			<div class="inner_top">
+				<strong class="step">STEP 01</strong>
+				<span class="steptitle">개인 정보 이용 동의</span>
+			</div>
+		</h1>
+		<div class="join_content">
+			<p class="inputform">
+				<label>이름</label>
+				<input type="text" placeholder="이름을 입력해 주세요." id="username"/>
+			</p>
+			<p class="inputform">
+				<label>휴대전화번호</label>
+				<input type="text" placeholder="휴대전화번호를 입력해주세요.'-'제외" id="usertel"/>
+			</p>
+			<p class="selectform">
+				<label>이메일주소</label>
+				<input type="text" name="email1" class="email1" id="email1"/>
+				<span class="email">@</span>
+				<input type="text" name="email2" class="email2" id="email2" disabled value="gmail.com">
+				<select class="emailselect">
+					<option value="">선택</option>
+					<option value="gmail.com">gmail.com</option>
+					<option value="hanmail.net">hanmail.net</option>
+					<option value="naver.com">naver.com</option>
+					<option value="kakao.co.kr">kakao.co.kr</option>
+					<option value="1">직접입력</option>
+				</select>
+			</p>
+			<p class="authform">
+				<input type="text" class="auth_input" id="userauth"/><button class="authbtn">인증 발송</button>
+				<!--<button class="authbtn fin">인증 완료</button>-->
+			</p>	
+			<span class="auth_info">* 입력한 이메일 주소로 인증번호가 발송됩니다.</span>
+			<!--<span class="auth_info">* 인증이 확인되었습니다.</span>-->
+			<ul class="agree_chk_form">
+				<li class="all_check_form">
+					<input type="checkbox" name="allCheck" id="allCheck">
+					<label for="allCheck" class="checkbox type_agree">전체동의</label>
+				</li>
+				<li class="check_form">
+					<p class="check_wrap">
+						<input type="checkbox" name="chk" class="chk" id="serviceagree">
+						<label for="serviceagree" class="chkbox type_agree">개인정보 처리방침 동의</label>
+					</p>
+					<span class="showterms service_term">보기</span>
+				</li>
+				<li class="check_form">
+					<p class="check_wrap">
+						<input type="checkbox" name="chk" class="chk" id="myinfoagree">
+						<label for="myinfoagree" class="chkbox type_agree">개인정보 수집이용 동의</label>
+					</p>
+					<span class="showterms person_term">보기</span>
+				</li>
+				<li class="check_form">
+					<p class="check_wrap">
+						<input type="checkbox" name="chk" class="chk" id="marketing_agree">
+						<label for="marketing_agree" class="chkbox type_agree marketinglabel">마케팅 정보 수신 동의(선택)</label>
+					</p>
+					<span class="showterms marketing_term">보기</span>
+				</li>
+			</ul>
+			<button class="confirmBtn">작성 완료</button>
+	</section>
+
+	<!--작성완료 확인 팝업-->
+	<div class="layer_alert_wrap">
+		<div class="layer_alert_contain">
+			<div class="content">
+				고객 정보 입력 및 전체 처리 방침,<br/> 
+				이용약관에 동의하여야<br/> 
+				다음 단계로 진행할 수 있습니다.
+			</div>
+			<button class="alert_close_layer">확인</button>
+		</div>
+	</div>
+
+	<!--개인정보 처리방침 동의-->
+	<div class="layer_popup_wrap">
+		<div class="layer_popup_contain">
+			<p class="layertitle">개인정보 처리방침 동의</p>
+			<div class="content">
+				개인정보 처리방침 동의 내용이 들어갈 자리입니다.개인정보 처리방
+				개인정보 처리방침 동의 내용이 들어갈 자리입니다.개인정보 처리방
+				개인정보 처리방침 동의 내용이 들어갈 자리입니다.개인정보 처리방
+				개인정보 처리방침 동의 내용이 들어갈 자리입니다.개인정보 처리방침 
+				동의 내용이 들어갈 자리입니다.
+				개인정보 처리방침 동의 내용이 들어갈 자리입니다.개인정보 처리방
+				개인정보 처리방침 동의 내용이 들어갈 자리입니다.개인정보 처리방침 
+				동의 내용이 들어갈 자리입니다.
+				개인정보 처리방침 동의 내용이 들어갈 자리입니다.개인정보 처리방
+				개인정보 처리방침 동의 내용이 들어갈 자리입니다.개인정보 처리방침 
+				동의 내용이 들어갈 자리입니다.
+				개인정보 처리방침 동의 내용이 들어갈 자리입니다.개인정보 처리방
+				개인정보 처리방침 동의 내용이 들어갈 자리입니다.개인정보 처리방침 
+				동의 내용이 들어갈 자리입니다.
+			</div>
+			<button class="close_layer">닫기</button>
+		</div>
+	</div>		
+	<!--개인정보 수집이용 동의-->
+	<!--마케팅 정보 수신 동의-->
+	<footer>
+		<h4>1899-2816</h4>
+		<p>서울특별시 서초구 강남대로 275, 8층 802호 </p> 
+		<p>(서초동, 강남 Main Tower)</p>
+		<p>대표 : 김기성&nbsp;&nbsp;&#x0002F;&nbsp;&nbsp;사업자등록번호: 666-81-00304</p>
+		<p>FAX : 02-521-7526&nbsp;&nbsp;&#x0002F;&nbsp;&nbsp;Email : froginvest@froginvestment.co.kr</p>
+		<p class="footer_etc">Copyrightⓒ Frog Investment consultation Inc. All right reserved.</p>
+	</footer>	
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$(function(){
+	//이메일 입력방식 선택
+	$('.emailselect').change(function(){ 
+		$(".emailselect option:selected").each(function () { 
+			if($(this).val()== '1'){ 
+				$(".email2").val(''); 
+				$(".email2").attr("disabled",false);
+			}else{
+				$(".email2").val($(this).text());
+				$(".email2").attr("disabled",true);
+			}
+		});
+	});
+
+	//작성완료 클릭이벤트
+	$(".confirmBtn").on("click", function(){
+		//이름체크
+		if($("#username").val()=="") {
+			$(".layer_alert_wrap").show();
+			$(".alert_close_layer").on("click", function(){
+				$(".layer_alert_wrap").hide();
+				$("#username").focus();
+			});
+		}
+
+		//전화번호체크
+		if($("#usertel").val()=="") {
+			$(".layer_alert_wrap").show();
+			$(".alert_close_layer").on("click", function(){
+				$(".layer_alert_wrap").hide();
+				$("#usertel").focus();
+			});
+		}
+		
+		//이메일체크
+		if($("#email1").val()=="") {
+			$(".layer_alert_wrap").show();
+			$(".alert_close_layer").on("click", function(){
+				$(".layer_alert_wrap").hide();
+				$("#email1").focus();
+			});
+		}
+
+		//인증번호체크
+		if($("#userauth").val()=="") {
+			$(".layer_alert_wrap").show();
+			$(".alert_close_layer").on("click", function(){
+				$(".layer_alert_wrap").hide();
+				$("#email1").focus();
+			});
+		}
+
+		//필수정보
+		if(!($("#serviceagree").is(":checked"))) {
+			$(".layer_alert_wrap").show();
+			$(".alert_close_layer").on("click", function(){
+				$(".layer_alert_wrap").hide();
+			});
+		}
+
+		//필수정보
+		if(!($("#myinfoagree").is(":checked"))){
+			$(".layer_alert_wrap").show();
+			$(".alert_close_layer").on("click", function(){
+				$(".layer_alert_wrap").hide();
+			});
+		}
+	});
+
+	//전체선택
+	$("#allCheck").change(function(){ checkAll('allCheck'); });
+	
+	// 체크박스 한개라도 체크시 전체 체크사라지게 
+	$(".chk").click(function(){
+		if($("input[name='chk']:checked").length == 3){
+			$("#allCheck").prop("checked",true);
+		}else{
+			$("#allCheck").prop("checked",false);
+		}
+	});
+
+	$(".service_term").on("click", function(){
+		$(".layer_popup_wrap").show();
+	});
+	$(".close_layer").on("click", function(){
+		$(".layer_popup_wrap").hide();
+	});
+	
+
+});
+
+/*체크박스 전체선택*/
+function checkAll(checkbox_id) {
+	if($("#"+checkbox_id).is(":checked")) $('input:checkbox').prop('checked', true);
+    else $('input:checkbox').prop('checked', false);
+}
+</script>	
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>노다지 주식정보 - TODAY</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div id="wrap">
+		<header class="">
+			<div class="innerheader">
+				<div class="headerTop">
+					<h1 class="main_logo"><a href="/">노다지주식정보</a></h1>
+					<div class="search_wrap">
+						<input type="text" class="search_text ui-autocomplete-input" id="searchInput" placeholder="궁금한 주식 종목명을 검색해보세요." value="" autocomplete="off">
+										</div>
+					<div class="keyword_wrap">
+						<div class="popular_keyword">
+							<a href="javascript:void(0);" class="morebtn plus"><span class="plusicon"></span></a>
+							<ul id="keywordList" class="keword_list" style="top: -185.79px;"><li><em class="rank">1위</em><a href="/search/result/130500" class="keyword">GH신소재</a><em class="state same">―</em></li><li><em class="rank">2위</em><a href="/search/result/026150" class="keyword">특수건설</a><em class="state same">―</em></li><li><em class="rank">3위</em><a href="/search/result/037560" class="keyword">LG헬로비전</a><em class="state same">―</em></li><li><em class="rank">4위</em><a href="/search/result/005420" class="keyword">코스모화학</a><em class="state same">―</em></li><li><em class="rank">5위</em><a href="/search/result/032850" class="keyword">비트컴퓨터</a><em class="state same">―</em></li><li><em class="rank">6위</em><a href="/search/result/149950" class="keyword">아바텍</a><em class="state same">―</em></li><li><em class="rank">7위</em><a href="/search/result/095700" class="keyword">제넥신</a><em class="state same">―</em></li><li><em class="rank">8위</em><a href="/search/result/222040" class="keyword">코스맥스엔비티</a><em class="state same">―</em></li><li><em class="rank">9위</em><a href="/search/result/036460" class="keyword">한국가스공사</a><em class="state same">―</em></li><li><em class="rank">10위</em><a href="/search/result/035420" class="keyword">NAVER</a><em class="state same">―</em></li></ul>
+						</div>
+	
+						<div class="openkeyword">
+							<a href="javascript:void(0);" class="morebtn minus"><span class="minusicon"></span></a>
+							<ul id="keywordList" class="keword_list"><li><em class="rank">1위</em><a href="/search/result/130500" class="keyword">GH신소재</a><em class="state same">―</em></li><li><em class="rank">2위</em><a href="/search/result/026150" class="keyword">특수건설</a><em class="state same">―</em></li><li><em class="rank">3위</em><a href="/search/result/037560" class="keyword">LG헬로비전</a><em class="state same">―</em></li><li><em class="rank">4위</em><a href="/search/result/005420" class="keyword">코스모화학</a><em class="state same">―</em></li><li><em class="rank">5위</em><a href="/search/result/032850" class="keyword">비트컴퓨터</a><em class="state same">―</em></li><li><em class="rank">6위</em><a href="/search/result/149950" class="keyword">아바텍</a><em class="state same">―</em></li><li><em class="rank">7위</em><a href="/search/result/095700" class="keyword">제넥신</a><em class="state same">―</em></li><li><em class="rank">8위</em><a href="/search/result/222040" class="keyword">코스맥스엔비티</a><em class="state same">―</em></li><li><em class="rank">9위</em><a href="/search/result/036460" class="keyword">한국가스공사</a><em class="state same">―</em></li><li><em class="rank">10위</em><a href="/search/result/035420" class="keyword">NAVER</a><em class="state same">―</em></li></ul>
+						</div>	
+					</div>
+					<a href="/purchase/point" class="point_menu"><img src="img/point.png" alt="포인트충전"></a>
+				</div>
+				<nav>
+					<div class="innernav">
+						<ul class="navlist">
+							<li class="today_li">
+								<a href="/info/today" class="on">TODAY</a>
+							</li>
+							<li class="recom_li">
+								<a href="/info/important" class="">추천종목</a>
+							</li>
+							<li>
+								<a href="/info/invest" class="">투자정보</a>
+							</li>
+							<li>
+								<a href="/info/study" class="">주식공부</a>
+							</li>
+							<li class="m_earn_way">
+								<a href="/lecture/daily">돈버는기법</a>
+							</li>
+							<li>
+								<a href="/info/community" class="">커뮤니티</a>
+							</li>
+							<li class="vip_reading"><a href="/subscribe">실시간리딩</a></li>
+							<li class=""><a href="/news">증권가뉴스</a></li>
+						</ul>
+						<ul class="myinfo">
+												<li class="auth_menu"><a href="/auth">로그인</a></li>
+												<li><a href="/mypage">마이페이지</a></li>
+						</ul>
+					</div>	
+					<!--subnav-->
+					<div class="subnav_wrap">
+						<!--TODAY-->
+						<ul class="subnav active">
+							<li><a href="/info/today/date" class="on">최신순</a></li>
+							<li><a href="/info/today/hit" class="">조회수순</a></li>
+							<li><a href="/info/today/share" class="">공유순</a></li>
+							<li><a href="/info/today/reply" class="">댓글순</a></li>
+							<li><a href="/info/today/rec" class="">추천순</a></li>
+						</ul>
+						<!--추천종목-->
+						<ul class="subnav ">
+												<li class="recom_menu"><a href="/info/important/17">무료 추천종목</a></li>
+												<li class="recom_menu"><a href="/stock">유료추천정보</a></li>
+						</ul>
+						<!--투자정보-->
+						<ul class="subnav investsub ">
+							<li><a href="/info/invest" class="on">전체</a></li>
+												<li class="invest5"><a href="/info/invest/5">데일리 check</a></li>
+												<li class="invest6"><a href="/info/invest/6">이슈분석</a></li>
+												<li class="invest7"><a href="/info/invest/7">시황분석</a></li>
+												<li class="invest8"><a href="/info/invest/8">종목분석</a></li>
+											</ul>
+						<!--주식공부-->
+						<ul class="subnav studysub ">
+								<li><a href="/info/study" class="on">전체</a></li>
+													<li><a href="/info/study/9">기초</a></li>
+													<li><a href="/info/study/10">실전</a></li>
+													<li><a href="/info/study/11">용어</a></li>
+											</ul>
+						<!--돈버는 기법-->
+						<ul class="subnav ">
+							<li class="lecturemenu"><a href="/lecture/daily" "="">데일리 실전 매매</a></li>
+												</ul>
+						<!--커뮤니티-->
+						<ul class="subnav communitysub ">
+							<li><a href="/info/community" class="on">전체</a></li>
+											<li><a href="/info/community/14">질문하기</a></li>
+											<li><a href="/info/event">이벤트</a></li>
+											<li><a href="/info/community/15">건의하기</a></li>
+											<li><a href="/info/community/12">공지사항</a></li>
+											</ul>
+						<ul class="subnav newssub ">
+							<li class="newssubmenu"><a href="/news" class="on">홈</a></li>
+							
+		<li class="news_search_wrap">
+								<input type="text" placeholder="뉴스검색" class="search_input">
+								<button class="clicksearch"></button>
+							</li>
+						</ul>
+						<ul class="subnav searchsub ">
+							<li><a href="/search/result/" class="">AI 종목 분석</a></li>
+													<li><a href="/search/analysis" class="">전문가 분석요청</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+	<section class="content">
+		<article class="innercon">
+			<div class="leftwrap">
+				<div class="orderwrap roundbox">
+					<ul>
+						<li class="orderlist">
+							<a href="">
+								<span class="ordernum">1</span>
+								<img src="img/main/listimg.png" alt="" class="Limg"/>
+								<span class="con_title">[20.09.18] 전 세계가 현대의 전기차 행보에 큰 관심을 갖고 있다. 이제 테슬라 잡겠다는 현대자동차 관련주!</span>
+								<ul class="order_info">
+									<li>12시간전</li>
+									<li>조회수<span>3</span></li>
+									<li>공유수<span>0</span></li>
+								</ul>	
+							</a>
+						</li>
+						<li class="orderlist">
+							<a href="">
+								<span class="ordernum">2</span>
+								<img src="img/main/listimg.png" alt="" class="Limg"/>
+								<span class="con_title">[20.09.18] 전 세계가 현대의 전기차 행보에 큰 관심을 갖고 있다. 이제 테슬라 잡겠다는 현대자동차 관련주!</span>
+								<ul class="order_info">
+									<li>12시간전</li>
+									<li>조회수<span>3</span></li>
+									<li>공유수<span>0</span></li>
+								</ul>	
+							</a>
+						</li>
+						<li class="orderlist">
+							<a href="">
+								<span class="ordernum">3</span>
+								<img src="img/main/listimg.png" alt="" class="Limg" />
+								<span class="con_title">[20.09.18] 전 세계가 현대의 전기차 행보에 큰 관심을 갖고 있다. 이제 테슬라 잡겠다는 현대자동차 관련주!</span>
+								<ul class="order_info">
+									<li>12시간전</li>
+									<li>조회수<span>3</span></li>
+									<li>공유수<span>0</span></li>
+								</ul>	
+							</a>
+						</li>
+						<li class="orderlist">
+							<a href="">
+								<span class="ordernum">4</span>
+								<img src="img/main/listimg.png" alt="" class="Limg"/>
+								<span class="con_title">[20.09.18] 전 세계가 현대의 전기차 행보에 큰 관심을 갖고 있다. 이제 테슬라 잡겠다는 현대자동차 관련주!</span>
+								<ul class="order_info">
+									<li>12시간전</li>
+									<li>조회수<span>3</span></li>
+									<li>공유수<span>0</span></li>
+								</ul>	
+							</a>
+						</li>
+						<li class="orderlist">
+							<a href="">
+								<span class="ordernum">5</span>
+								<img src="img/main/listimg.png" alt="" class="Limg"/>
+								<span class="con_title">[20.09.18] 전 세계가 현대의 전기차 행보에 큰 관심을 갖고 있다. 이제 테슬라 잡겠다는 현대자동차 관련주!</span>
+								<ul class="order_info">
+									<li>12시간전</li>
+									<li>조회수<span>3</span></li>
+									<li>공유수<span>0</span></li>
+								</ul>	
+							</a>
+						</li>
+					</ul>	
+				</div>
+				<div class="bannerwrap"><img src="img/main/today_new_banner.png"></div>
+				<div class="recomwrap">
+					<span class="top_title">추천종목</span>
+					<ul class="stocklist">
+						<li>
+							<a href="">
+								<img src="img/main/recommend1.jpg"/>
+								<span class="sub_title">아시아나 인수 무산으로 인해 급등이 예상</span>
+								<span class="big_title">HDC현대산업개발(294870)[제시가격] • 매수가: (1차)...</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/main/recommend2.jpg"/>
+								<span class="sub_title">아시아나 인수 무산으로 인해 급등이 예상</span>
+								<span class="big_title">HDC현대산업개발(294870)[제시가격] • 매수가: (1차)...</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/main/recommend3.jpg"/>
+								<span class="sub_title">아시아나 인수 무산으로 인해 급등이 예상</span>
+								<span class="big_title">HDC현대산업개발(294870)[제시가격] • 매수가: (1차)...</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/main/recommend4.jpg"/>
+								<span class="sub_title">아시아나 인수 무산으로 인해 급등이 예상</span>
+								<span class="big_title">HDC현대산업개발(294870)[제시가격] • 매수가: (1차)...</span>
+							</a>
+						</li>
+					</ul>
+				</div>	
+				<div class="investwrap">
+					<span class="top_title">투자정보</span>
+					<ul class="stocklist">
+						<li>
+							<a href="">
+								<img src="img/main/recommend1.jpg"/>
+								<span class="sub_title">아시아나 인수 무산으로 인해 급등이 예상</span>
+								<span class="big_title">HDC현대산업개발(294870)[제시가격] • 매수가: (1차)...</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/main/recommend2.jpg"/>
+								<span class="sub_title">아시아나 인수 무산으로 인해 급등이 예상</span>
+								<span class="big_title">HDC현대산업개발(294870)[제시가격] • 매수가: (1차)...</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/main/recommend3.jpg"/>
+								<span class="sub_title">아시아나 인수 무산으로 인해 급등이 예상</span>
+								<span class="big_title">HDC현대산업개발(294870)[제시가격] • 매수가: (1차)...</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/main/recommend4.jpg"/>
+								<span class="sub_title">아시아나 인수 무산으로 인해 급등이 예상</span>
+								<span class="big_title">HDC현대산업개발(294870)[제시가격] • 매수가: (1차)...</span>
+							</a>
+						</li>
+					</ul>
+				</div>	
+				<div class="stockwrap">
+					<span class="top_title">주식공부</span>
+					<ul class="stocklist">
+						<li>
+							<a href="">
+								<img src="img/main/recommend1.jpg"/>
+								<span class="sub_title">아시아나 인수 무산으로 인해 급등이 예상</span>
+								<span class="big_title">HDC현대산업개발(294870)[제시가격] • 매수가: (1차)...</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/main/recommend2.jpg"/>
+								<span class="sub_title">아시아나 인수 무산으로 인해 급등이 예상</span>
+								<span class="big_title">HDC현대산업개발(294870)[제시가격] • 매수가: (1차)...</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/main/recommend3.jpg"/>
+								<span class="sub_title">아시아나 인수 무산으로 인해 급등이 예상</span>
+								<span class="big_title">HDC현대산업개발(294870)[제시가격] • 매수가: (1차)...</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/main/recommend4.jpg"/>
+								<span class="sub_title">아시아나 인수 무산으로 인해 급등이 예상</span>
+								<span class="big_title">HDC현대산업개발(294870)[제시가격] • 매수가: (1차)...</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<aside class="rightwrap">
+				<div class="vip_banner">
+					<a href=""><img src="img/main/vipimg.png" alt="vip구독특전"></a>
+				</div>	
+				<div class="today_wrap rightbox roundbox">
+					<p>추천종목</p>
+					<a href="/info/important" class="more">더보기 &gt; </a>
+					<ul class="right_info_ul rnb_important">
+						<li>
+							<a href="">
+								<span style="background-image:url('img/main/100.jpg')" class="Limg"></span>
+								<span class="right_info_title">이글벳으로 떡상하고 1억 벌었으~!!</span>
+								<ul class="right_info"><li>1일전</li><li>조회<span>350</span></li><li>공유<span>3</span></li></ul>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span style="background-image:url('img/main/100.png')" class="Limg"></span>
+								<span class="right_info_title">이글벳으로 떡상하고 1억 벌었으~!!</span>
+								<ul class="right_info"><li>1일전</li><li>조회<span>350</span></li><li>공유<span>3</span></li></ul>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span style="background-image:url('img/main/200.png')" class="Limg"></span>
+								<span class="right_info_title">이글벳으로 떡상하고 1억 벌었으~!!</span>
+								<ul class="right_info"><li>1일전</li><li>조회<span>350</span></li><li>공유<span>3</span></li></ul>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span style="background-image:url('img/main/100.jpg')" class="Limg"></span>
+								<span class="right_info_title">이글벳으로 떡상하고 1억 벌었으~!!</span>
+								<ul class="right_info"><li>1일전</li><li>조회<span>350</span></li><li>공유<span>3</span></li></ul>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span style="background-image:url('img/main/100.png')" class="Limg"></span>
+								<span class="right_info_title">이글벳으로 떡상하고 1억 벌었으~!!</span>
+								<ul class="right_info"><li>1일전</li><li>조회<span>350</span></li><li>공유<span>3</span></li></ul>
+							</a>
+						</li>
+					</ul>	
+				</div>
+				<div class="invest_infowrap rightbox roundbox">
+					<p>투자정보</p>
+					<a href="/info/important" class="more">더보기 &gt; </a>
+					<ul class="right_info_ul rnb_important">
+						<li>
+							<a href="">
+								<span style="background-image:url('img/main/100.jpg')" class="Limg"></span>
+								<span class="right_info_title">이글벳으로 떡상하고 1억 벌었으~!!</span>
+								<ul class="right_info"><li>1일전</li><li>조회<span>350</span></li><li>공유<span>3</span></li></ul>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span style="background-image:url('img/main/100.png')" class="Limg"></span>
+								<span class="right_info_title">이글벳으로 떡상하고 1억 벌었으~!!</span>
+								<ul class="right_info"><li>1일전</li><li>조회<span>350</span></li><li>공유<span>3</span></li></ul>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span style="background-image:url('img/main/200.png')" class="Limg"></span>
+								<span class="right_info_title">이글벳으로 떡상하고 1억 벌었으~!!</span>
+								<ul class="right_info"><li>1일전</li><li>조회<span>350</span></li><li>공유<span>3</span></li></ul>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span style="background-image:url('img/main/100.jpg')" class="Limg"></span>
+								<span class="right_info_title">이글벳으로 떡상하고 1억 벌었으~!!</span>
+								<ul class="right_info"><li>1일전</li><li>조회<span>350</span></li><li>공유<span>3</span></li></ul>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span style="background-image:url('img/main/100.png')" class="Limg"></span>
+								<span class="right_info_title">이글벳으로 떡상하고 1억 벌었으~!!</span>
+								<ul class="right_info"><li>1일전</li><li>조회<span>350</span></li><li>공유<span>3</span></li></ul>
+							</a>
+						</li>
+					</ul>	
+				</div>
+			</aside>
+		</article>	
+	</section>
+	<section class="floating">
+		<img class="topBtn" src="img/topbtn.png" alt="" style="display: inline;">
+	</section>
+	<section class="appdownwrap">
+		<div class="innerapp">
+			<div class="left_info">
+				<p class="first_txt">뉴스보다 빠른 노다지 <span>주식정보 노다지란?</span></p>
+				<p>주식 투자에 있어 확실한 수익을 얻을 수 있는</p>
+				<p>명확한 자료 제공 및 종목추천을 지루할 틈 없이 쉽게 받아볼 수 있습니다.</p>
+				<a href="/subscribe/vip_android" class="appdownbtn">노다지앱 다운받기</a>
+			</div>
+			<div class="right_info">
+				<img src="img/main/apphand.png">
+			</div>	
+		</div>	
+	</section>
+	<footer>
+		<div class="innerfooter">
+			<div class="left">
+				<h1 class="footerlogo"><a href="index.html">노다지 주식정보</a></h1>
+				<p class="copy">copyright ㈜스마트퓨쳐, ALL RIGHT RESERVED.</p>
+			</div>
+			<div class="right">
+				<ul class="company_clause">
+					<li><a href="">개인정보취급방침</a></li>
+					<li><a href="">이용약관</a></li>
+				</ul>	
+				<p class="company_info">
+					<span>상호명 : 주식회사 스마트퓨쳐 &#47; 대표자 : 홍운기 &#47; 사업자 번호 : 646-86-29368 </span>
+					<span>주소 : 서울특별시 서초구 강남대로 51길 10 , 비 1동 103-219(서초동, 강남효성해링턴타워)</span>
+					<span class="company_info_etc">
+						(주)스마트퓨쳐는 종목발굴 서비스 플랫폼의 제공자로서, 종목발굴 컨텐츠 제공의 당사자가 아니며<br/>
+						종목발굴 컨텐츠의 제공, 운영 및 관리 등과 관련한 의무와 책임은 (주)청개구리투자클럽에게 있습니다.
+					</span>
+				</p>
+			</div>
+		</div>		
+	</footer>
+	</div>	
+</body>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+$(function(){
+	// 위로가기버튼
+	$(".floating .topBtn").click(function(){
+		$("html, body").stop().animate({scrollTop:0}, "fast");
+	});
+
+	//스크롤시 top 버튼 이벤트 
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 500) {
+			$('.floating .topBtn').fadeIn();
+		} else {
+			$('.floating .topBtn').fadeOut();
+		}
+	});
+
+	//스크롤시 헤더 고정 
+	var offSet = $('header').offset();
+	$( window ).scroll( function() {
+		if ( $( document ).scrollTop() > offSet.top ) {$( 'header' ).addClass( 'fixed' );}
+		else {$( 'header' ).removeClass( 'fixed' );}
+	});
+
+	$(".morebtn.plus").on('click',function(){
+		$(".openkeyword").addClass("active");
+		
+		if($(".openkeyword").hasClass("active")){
+			clearInterval(keywordRollingOff);
+		}
+	});
+	$(".morebtn.minus").on('click',function(){
+		$(".openkeyword").removeClass("active");
+		keywordRollingOff = setInterval(keywordRolling,2000);
+	});
+
+	var height = $(".popular_keyword").height();
+	var num = $(".popular_keyword .keword_list li").length;
+	var max = height * num; 
+	var move = 0; 
+	
+	keywordRollingOff = setInterval(keywordRolling,2000);
+
+	function keywordRolling(){
+		move += height;
+		$(".popular_keyword .keword_list ").animate({"top":-move},600,function(){
+			if( move >= max ){
+				$(this).css("top",0);
+				move = 0;
+			};
+		});
+	}
+});
+</script>	
+</html>
